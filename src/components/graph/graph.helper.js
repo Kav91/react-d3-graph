@@ -33,7 +33,7 @@ import ERRORS from "../../err";
 import { isDeepEqual, isEmptyObject, merge, pick, antiPick, throwErr, throwWarning } from "../../utils";
 import { computeNodeDegree } from "./collapse.helper";
 
-const NODE_PROPS_WHITELIST = ["id", "highlighted", "index", "vy", "vx"];
+const NODE_PROPS_WHITELIST = ["id", "highlighted", "x", "y", "index", "vy", "vx"];
 const LINK_PROPS_WHITELIST = ["index", "source", "target", "isHidden"];
 
 /**
