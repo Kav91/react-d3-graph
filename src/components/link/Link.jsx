@@ -101,9 +101,7 @@ export default class Link extends React.Component {
                 <path {...lineProps} id={id} />
                 {label && (
                     <text style={{ textAnchor: "middle" }} {...textProps}>
-                        <textPath href={`#${id}`} startOffset="50%">
-                            {label}
-                        </textPath>
+                        <textPath href={`#${id}`}>{label}</textPath>
                     </text>
                 )}
             </g>
