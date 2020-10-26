@@ -12,7 +12,6 @@ test
 .editorconfig
 .eslintrc.js
 .eslintrc.test.config.js
-.travis.yml
 cypress.json
 package-lock.json
 RELEASE_PROCESS
@@ -20,3 +19,5 @@ webpack.config.dist.js
 webpack.config.js
 yarn.lock
 .DS_Store
+tools
+notes.txt

@@ -4,166 +4,238 @@
 
 -   [Graph/collapse-helper][1]
     -   [\_isLeafDirected][2]
-    -   [\_isLeafNotDirected][3]
-    -   [\_isLeaf][4]
-    -   [computeNodeDegree][5]
-    -   [getTargetLeafConnections][6]
-    -   [isNodeVisible][7]
-    -   [toggleLinksConnections][8]
-    -   [toggleLinksMatrixConnections][9]
--   [Graph/builder][10]
-    -   [\_getNodeOpacity][11]
-    -   [buildLinkProps][12]
-    -   [buildNodeProps][13]
--   [graph.config][14]
--   [Graph/helper][15]
-    -   [Link][16]
-    -   [Node][17]
-    -   [\_createForceSimulation][18]
-    -   [\_initializeLinks][19]
-    -   [\_initializeNodes][20]
-    -   [\_mergeDataLinkWithD3Link][21]
-    -   [\_tagOrphanNodes][22]
-    -   [\_validateGraphData][23]
-    -   [\_pickId][24]
-    -   [\_pickSourceAndTarget][25]
-    -   [checkForGraphElementsChanges][26]
-    -   [checkForGraphConfigChanges][27]
-    -   [getCenterAndZoomTransformation][28]
-    -   [initializeGraphState][29]
-    -   [updateNodeHighlightedValue][30]
--   [Link/const][31]
-    -   [LINE_TYPES][32]
--   [Link/helper][33]
-    -   [straightLineRadius][34]
-    -   [smoothCurveRadius][35]
-    -   [fullCurveRadius][36]
-    -   [getRadiusStrategy][37]
-    -   [buildLinkPathDefinition][38]
--   [Marker/helper][39]
-    -   [\_markerKeyBuilder][40]
-    -   [\_getMarkerSize][41]
-    -   [\_computeMarkerId][42]
-    -   [\_memoizedComputeMarkerId][43]
-    -   [getMarkerId][44]
--   [Node/helper][45]
-    -   [\_convertTypeToD3Symbol][46]
-    -   [buildSvgSymbol][47]
--   [Graph][48]
-    -   [\_generateFocusAnimationProps][49]
-    -   [\_graphLinkForceConfig][50]
-    -   [\_graphNodeDragConfig][51]
-    -   [\_graphBindD3ToReactComponent][52]
-    -   [\_onDragEnd][53]
-    -   [\_onDragMove][54]
-    -   [\_onDragStart][55]
-    -   [\_setNodeHighlightedValue][56]
-    -   [\_tick][57]
-    -   [\_zoomConfig][58]
-    -   [\_zoomed][59]
-    -   [onClickGraph][60]
-    -   [onClickNode][61]
-    -   [onMouseOverNode][62]
-    -   [onMouseOutNode][63]
-    -   [onMouseOverLink][64]
-    -   [onMouseOutLink][65]
-    -   [pauseSimulation][66]
-    -   [resetNodesPositions][67]
-    -   [restartSimulation][68]
-    -   [UNSAFE_componentWillReceiveProps][69]
--   [Graph/renderer][70]
-    -   [\_renderLinks][71]
-    -   [\_renderNodes][72]
-    -   [\_renderDefs][73]
-    -   [\_memoizedRenderDefs][74]
-    -   [renderGraph][75]
--   [Marker][76]
--   [Node][77]
-    -   [handleOnClickNode][78]
-    -   [handleOnRightClickNode][79]
-    -   [handleOnMouseOverNode][80]
-    -   [handleOnMouseOutNode][81]
--   [Link][82]
-    -   [handleOnClickLink][83]
-    -   [handleOnRightClickLink][84]
-    -   [handleOnMouseOverLink][85]
-    -   [handleOnMouseOutLink][86]
--   [utils][87]
-    -   [\_isPropertyNestedObject][88]
-    -   [isDeepEqual][89]
-    -   [isEmptyObject][90]
-    -   [deepClone][91]
-    -   [merge][92]
-    -   [pick][93]
-    -   [antiPick][94]
-    -   [throwErr][95]
+        -   [Parameters][3]
+    -   [\_isLeafNotDirected][4]
+        -   [Parameters][5]
+    -   [\_isLeaf][6]
+        -   [Parameters][7]
+    -   [computeNodeDegree][8]
+        -   [Parameters][9]
+    -   [getTargetLeafConnections][10]
+        -   [Parameters][11]
+    -   [isNodeVisible][12]
+        -   [Parameters][13]
+    -   [toggleLinksConnections][14]
+        -   [Parameters][15]
+    -   [toggleLinksMatrixConnections][16]
+        -   [Parameters][17]
+-   [Graph/builder][18]
+    -   [\_getNodeOpacity][19]
+        -   [Parameters][20]
+    -   [buildLinkProps][21]
+        -   [Parameters][22]
+    -   [buildNodeProps][23]
+        -   [Parameters][24]
+-   [graph.config][25]
+    -   [Parameters][26]
+    -   [Examples][27]
+-   [Graph/helper][28]
+    -   [Link][29]
+        -   [Properties][30]
+    -   [Node][31]
+        -   [Properties][32]
+    -   [\_createForceSimulation][33]
+        -   [Parameters][34]
+    -   [\_initializeLinks][35]
+        -   [Parameters][36]
+    -   [\_initializeNodes][37]
+        -   [Parameters][38]
+    -   [\_mergeDataLinkWithD3Link][39]
+        -   [Parameters][40]
+    -   [\_tagOrphanNodes][41]
+        -   [Parameters][42]
+    -   [\_validateGraphData][43]
+        -   [Parameters][44]
+    -   [\_pickId][45]
+        -   [Parameters][46]
+    -   [\_pickSourceAndTarget][47]
+        -   [Parameters][48]
+    -   [checkForGraphElementsChanges][49]
+        -   [Parameters][50]
+    -   [checkForGraphConfigChanges][51]
+        -   [Parameters][52]
+    -   [getCenterAndZoomTransformation][53]
+        -   [Parameters][54]
+    -   [getId][55]
+        -   [Parameters][56]
+    -   [initializeGraphState][57]
+        -   [Parameters][58]
+    -   [updateNodeHighlightedValue][59]
+        -   [Parameters][60]
+    -   [normalize][61]
+        -   [Parameters][62]
+    -   [getNormalizedNodeCoordinates][63]
+        -   [Parameters][64]
+-   [Link/const][65]
+    -   [LINE_TYPES][66]
+        -   [Properties][67]
+-   [Link/helper][68]
+    -   [straightLineRadius][69]
+    -   [smoothCurveRadius][70]
+        -   [Parameters][71]
+    -   [fullCurveRadius][72]
+    -   [getRadiusStrategy][73]
+        -   [Parameters][74]
+    -   [buildLinkPathDefinition][75]
+        -   [Parameters][76]
+-   [Marker/helper][77]
+    -   [\_markerKeyBuilder][78]
+        -   [Parameters][79]
+    -   [\_getMarkerSize][80]
+        -   [Parameters][81]
+    -   [\_computeMarkerId][82]
+        -   [Parameters][83]
+    -   [\_memoizedComputeMarkerId][84]
+    -   [getMarkerId][85]
+        -   [Parameters][86]
+    -   [getMarkerSize][87]
+        -   [Parameters][88]
+-   [Node/helper][89]
+    -   [\_convertTypeToD3Symbol][90]
+        -   [Parameters][91]
+    -   [buildSvgSymbol][92]
+        -   [Parameters][93]
+    -   [getLabelPlacementProps][94]
+        -   [Parameters][95]
+-   [Graph][96]
+    -   [Parameters][97]
+    -   [Examples][98]
+    -   [\_generateFocusAnimationProps][99]
+    -   [\_graphLinkForceConfig][100]
+    -   [\_graphNodeDragConfig][101]
+    -   [\_graphBindD3ToReactComponent][102]
+    -   [\_onDragEnd][103]
+    -   [\_onDragMove][104]
+        -   [Parameters][105]
+    -   [\_onDragStart][106]
+    -   [\_setNodeHighlightedValue][107]
+        -   [Parameters][108]
+    -   [\_tick][109]
+        -   [Parameters][110]
+    -   [\_zoomConfig][111]
+    -   [\_zoomed][112]
+    -   [onClickGraph][113]
+        -   [Parameters][114]
+    -   [onClickNode][115]
+        -   [Parameters][116]
+    -   [onMouseOverNode][117]
+        -   [Parameters][118]
+    -   [onMouseOutNode][119]
+        -   [Parameters][120]
+    -   [onMouseOverLink][121]
+        -   [Parameters][122]
+    -   [onMouseOutLink][123]
+        -   [Parameters][124]
+    -   [onNodePositionChange][125]
+        -   [Parameters][126]
+    -   [pauseSimulation][127]
+    -   [resetNodesPositions][128]
+    -   [restartSimulation][129]
+    -   [UNSAFE_componentWillReceiveProps][130]
+        -   [Parameters][131]
+-   [Graph/renderer][132]
+    -   [\_renderLinks][133]
+        -   [Parameters][134]
+    -   [\_renderNodes][135]
+        -   [Parameters][136]
+    -   [\_renderDefs][137]
+    -   [\_memoizedRenderDefs][138]
+        -   [Parameters][139]
+    -   [renderGraph][140]
+        -   [Parameters][141]
+-   [Marker][142]
+    -   [Examples][143]
+-   [Node][144]
+    -   [Examples][145]
+    -   [handleOnClickNode][146]
+    -   [handleOnRightClickNode][147]
+        -   [Parameters][148]
+    -   [handleOnMouseOverNode][149]
+    -   [handleOnMouseOutNode][150]
+-   [Link][151]
+    -   [Examples][152]
+    -   [handleOnClickLink][153]
+    -   [handleOnRightClickLink][154]
+        -   [Parameters][155]
+    -   [handleOnMouseOverLink][156]
+    -   [handleOnMouseOutLink][157]
+-   [utils][158]
+    -   [\_isPropertyNestedObject][159]
+        -   [Parameters][160]
+    -   [isDeepEqual][161]
+        -   [Parameters][162]
+    -   [isEmptyObject][163]
+        -   [Parameters][164]
+    -   [deepClone][165]
+        -   [Parameters][166]
+    -   [merge][167]
+        -   [Parameters][168]
+    -   [pick][169]
+        -   [Parameters][170]
+    -   [antiPick][171]
+        -   [Parameters][172]
+    -   [buildFormattedErrorMessage][173]
+        -   [Parameters][174]
+    -   [throwErr][175]
+        -   [Parameters][176]
+    -   [logError][177]
+        -   [Parameters][178]
+    -   [logWarning][179]
+        -   [Parameters][180]
 
 ## Graph/collapse-helper
 
 Offers a series of methods that allow graph to perform the necessary operations to
-create the collapsible behavior.
-
-Developer notes - collapsing nodes and maintaining state on links matrix.
-
-User interaction flow (for a collapsible graph)
-1\. User clicks node
-2\. All leaf connections of that node are not rendered anymore
-3\. User clicks on same node
-4\. All leaf connections of that node are rendered
-
-Internal react-d3-graph flow
-1\. User clicks node
-2\. Compute leaf connections for clicked node (rootNode, root as in 'root' of the event)
-3\. Update connections matrix (based on 2.)
-4\. Update d3Links array with toggled connections (based on 2.)
+create the collapsible behavior. These functions will most likely operate on
+the links matrix.
 
 ### \_isLeafDirected
 
 For directed graphs.
 Check based on node degrees whether it is a leaf node or not.
 
-**Parameters**
+#### Parameters
 
--   `inDegree` **[number][96]** the in degree for a given node.
--   `outDegree` **[number][96]** the out degree for a given node.
+-   `inDegree` **[number][181]** the in degree for a given node.
+-   `outDegree` **[number][181]** the out degree for a given node.
 
-Returns **[boolean][97]** based on the degrees tells whether node is leaf or not.
+Returns **[boolean][182]** based on the degrees tells whether node is leaf or not.
 
 ### \_isLeafNotDirected
 
 For not directed graphs.
 Check based on node degrees whether it is a leaf node or not.
 
-**Parameters**
+#### Parameters
 
--   `inDegree` **[number][96]** the in degree for a given node.
--   `outDegree` **[number][96]** the out degree for a given node.
+-   `inDegree` **[number][181]** the in degree for a given node.
+-   `outDegree` **[number][181]** the out degree for a given node.
 
-Returns **[boolean][97]** based on the degrees tells whether node is leaf or not.
+Returns **[boolean][182]** based on the degrees tells whether node is leaf or not.
 
 ### \_isLeaf
 
 Given in and out degree tells whether degrees indicate a leaf or non leaf scenario.
 
-**Parameters**
+#### Parameters
 
--   `nodeId` **[string][98]** The id of the node to get the cardinality of.
--   `linksMatrix` **[Object][99]&lt;[string][98], [number][96]>** An object containing a matrix of connections of the nodes.
--   `directed` **[boolean][97]** whether graph in context is directed or not.
+-   `nodeId` **[string][183]** The id of the node to get the cardinality of.
+-   `linksMatrix` **[Object][184]&lt;[string][183], [number][181]>** An object containing a matrix of connections of the nodes.
+-   `directed` **[boolean][182]** whether graph in context is directed or not.
 
-Returns **[boolean][97]** flag that indicates whether node is leaf or not.
+Returns **[boolean][182]** flag that indicates whether node is leaf or not.
 
 ### computeNodeDegree
 
 Calculates degree (in and out) of some provided node.
 
-**Parameters**
+#### Parameters
 
--   `nodeId` **([string][98] \| [number][96])** the id of the node whom degree we want to compute.
--   `linksMatrix` **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph, for each nodeId,
+-   `nodeId` **([string][183] \| [number][181])** the id of the node whom degree we want to compute.
+-   `linksMatrix` **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph, for each nodeId,
     there is an object that maps adjacent nodes ids (string) and their values (number). (optional, default `{}`)
 
-Returns **[Object][99]&lt;[string][98], [number][96]>** returns object containing in and out degree of the node:- inDegree: number
+Returns **[Object][184]&lt;[string][183], [number][181]>** returns object containing in and out degree of the node:- inDegree: number
 
 -   outDegree: number
 
@@ -171,15 +243,15 @@ Returns **[Object][99]&lt;[string][98], [number][96]>** returns object containin
 
 Given a node id we want to calculate the list of leaf connections
 
-**Parameters**
+#### Parameters
 
--   `rootNodeId` **[string][98]** node who's leafs we want to calculate.
--   `linksMatrix` **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph, for each nodeId,
+-   `rootNodeId` **[string][183]** node who's leafs we want to calculate.
+-   `linksMatrix` **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph, for each nodeId,
     there is an object that maps adjacent nodes ids (string) and their values (number). (optional, default `{}`)
--   `config` **[Object][99]** same as [config in renderGraph][70].
-    -   `config.directed` **[boolean][97]** tells whether linksMatrix represents a directed graph or not.
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+    -   `config.directed` **[boolean][182]** tells whether linksMatrix represents a directed graph or not.
 
-Returns **[Array][100]&lt;[Object][99]&lt;[string][98], [string][98]>>** a list of leaf connections.
+Returns **[Array][185]&lt;[Object][184]&lt;[string][183], [string][183]>>** a list of leaf connections.
 What is a leaf connection? A leaf connection is a link between some node A and other node B
 where A has id equal to rootNodeId and B has inDegree 1 and outDegree 0 (or outDegree 1 but the connection is with A).
 
@@ -189,40 +261,40 @@ Given a node and the connections matrix, check if node should be displayed
 NOTE: this function is meant to be used under the `collapsible` toggle, meaning
 that the `isNodeVisible` actually is checking visibility on collapsible graphs.
 If you think that this code is confusing and could potentially collide (🤞) with #\_isLeaf
-always remember that _A leaf can, through time, be both a visible or an invisible node!_.
+always remember that _A leaf can, throughout time, both a visible or an invisible node!_.
 
-**Parameters**
+#### Parameters
 
--   `nodeId` **[string][98]** The id of the node to get the cardinality of
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** an object containing all nodes mapped by their id.
--   `linksMatrix` **[Object][99]&lt;[string][98], [number][96]>** An object containing a matrix of connections of the nodes.
+-   `nodeId` **[string][183]** The id of the node to get the cardinality of
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** an object containing all nodes mapped by their id.
+-   `linksMatrix` **[Object][184]&lt;[string][183], [number][181]>** An object containing a matrix of connections of the nodes.
 
-Returns **[boolean][97]** flag that indicates whether node should or not be displayed.
+Returns **[boolean][182]** flag that indicates whether node should or not be displayed.
 
 ### toggleLinksConnections
 
 Updates d3Links by toggling given connections
 
-**Parameters**
+#### Parameters
 
--   `d3Links` **[Array][100]&lt;[Object][99]>** An array containing all the d3 links.
--   `connectionMatrix` **[Array][100]&lt;[Object][99]&lt;[string][98], [string][98]>>** connections to toggle.
+-   `d3Links` **[Array][185]&lt;[Object][184]>** An array containing all the d3 links.
+-   `connectionMatrix` **[Array][185]&lt;[Object][184]&lt;[string][183], [string][183]>>** connections to toggle.
 
-Returns **[Array][100]&lt;[Object][99]>** updated d3Links.
+Returns **[Array][185]&lt;[Object][184]>** updated d3Links.
 
 ### toggleLinksMatrixConnections
 
 Update matrix given array of connections to toggle.
 
-**Parameters**
+#### Parameters
 
--   `linksMatrix` **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph, for each nodeId,
+-   `linksMatrix` **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph, for each nodeId,
     there is an object that maps adjacent nodes ids (string) and their values (number).
--   `connections` **[Array][100]&lt;[Object][99]&lt;[string][98], [string][98]>>** connections to toggle on matrix.
--   `config` **[Object][99]** same as [config in renderGraph][70].
-    -   `config.directed` **[boolean][97]** tells whether linksMatrix represents a directed graph or not.
+-   `connections` **[Array][185]&lt;[Object][184]&lt;[string][183], [string][183]>>** connections to toggle on matrix.
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+    -   `config.directed` **[boolean][182]** tells whether linksMatrix represents a directed graph or not.
 
-Returns **[Object][99]&lt;[string][98], [Object][99]>** updated linksMatrix
+Returns **[Object][184]&lt;[string][183], [Object][184]>** updated linksMatrix
 
 ## Graph/builder
 
@@ -232,61 +304,61 @@ Offers a series of methods that isolate the way graph elements are built (nodes 
 
 Get the correct node opacity in order to properly make decisions based on context such as currently highlighted node.
 
-**Parameters**
+#### Parameters
 
--   `node` **[Object][99]** the node object for whom we will generate properties.
--   `highlightedNode` **[string][98]** same as [highlightedNode in renderGraph][70].
--   `highlightedLink` **[Object][99]** same as [highlightedLink in renderGraph][70].
--   `config` **[Object][99]** same as [config in renderGraph][70].
+-   `node` **[Object][184]** the node object for whom we will generate properties.
+-   `highlightedNode` **[string][183]** same as [highlightedNode in renderGraph][132].
+-   `highlightedLink` **[Object][184]** same as [highlightedLink in renderGraph][132].
+-   `config` **[Object][184]** same as [config in renderGraph][132].
 
-Returns **[number][96]** the opacity value for the given node.
+Returns **[number][181]** the opacity value for the given node.
 
 ### buildLinkProps
 
 Build some Link properties based on given parameters.
 
-**Parameters**
+#### Parameters
 
--   `link` **[Object][99]** the link object for which we will generate properties.
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** same as [nodes in renderGraph][70].
--   `links` **[Object][99]&lt;[string][98], [Object][99]>** same as [links in renderGraph][70].
--   `config` **[Object][99]** same as [config in renderGraph][70].
--   `linkCallbacks` **[Array][100]&lt;[Function][101]>** same as [linkCallbacks in renderGraph][70].
--   `highlightedNode` **[string][98]** same as [highlightedNode in renderGraph][70].
--   `highlightedLink` **[Object][99]** same as [highlightedLink in renderGraph][70].
--   `transform` **[number][96]** value that indicates the amount of zoom transformation.
+-   `link` **[Object][184]** the link object for which we will generate properties.
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** same as [nodes in renderGraph][132].
+-   `links` **[Object][184]&lt;[string][183], [Object][184]>** same as [links in renderGraph][132].
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+-   `linkCallbacks` **[Array][185]&lt;[Function][186]>** same as [linkCallbacks in renderGraph][132].
+-   `highlightedNode` **[string][183]** same as [highlightedNode in renderGraph][132].
+-   `highlightedLink` **[Object][184]** same as [highlightedLink in renderGraph][132].
+-   `transform` **[number][181]** value that indicates the amount of zoom transformation.
 
-Returns **[Object][99]** returns an object that aggregates all props for creating respective Link component instance.
+Returns **[Object][184]** returns an object that aggregates all props for creating respective Link component instance.
 
 ### buildNodeProps
 
 Build some Node properties based on given parameters.
 
-**Parameters**
+#### Parameters
 
--   `node` **[Object][99]** the node object for whom we will generate properties.
--   `config` **[Object][99]** same as [config in renderGraph][70].
--   `nodeCallbacks` **[Array][100]&lt;[Function][101]>** same as [nodeCallbacks in renderGraph][70]. (optional, default `{}`)
--   `highlightedNode` **[string][98]** same as [highlightedNode in renderGraph][70].
--   `highlightedLink` **[Object][99]** same as [highlightedLink in renderGraph][70].
--   `transform` **[number][96]** value that indicates the amount of zoom transformation.
+-   `node` **[Object][184]** the node object for whom we will generate properties.
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+-   `nodeCallbacks` **[Array][185]&lt;[Function][186]>** same as [nodeCallbacks in renderGraph][132]. (optional, default `{}`)
+-   `highlightedNode` **[string][183]** same as [highlightedNode in renderGraph][132].
+-   `highlightedLink` **[Object][184]** same as [highlightedLink in renderGraph][132].
+-   `transform` **[number][181]** value that indicates the amount of zoom transformation.
 
-Returns **[Object][99]** returns object that contain Link props ready to be feeded to the Link component.
+Returns **[Object][184]** returns object that contain Link props ready to be feeded to the Link component.
 
 ## graph.config
 
 <div style="text-align: right;"><i>This is certainly the only extra piece of documentation that you will ever need</i></div>
-<br/><br/>
+</br></br>
 Here you can consult a detailed description of each graph configurable property as well as the default values
 of those properties.
 
-**Note about performance**<br/>
+<b>Note about performance</b></br>
 Some of the properties have a major performance impact when toggled while rendering graphs of medium or large dimensions (hundreds or thousand of elements).
-These properties are marked with 🚅🚅🚅.<br/>
-⭐ **tip** _to achieve smoother interactions you may want to provide a toggle to set **staticGraph** or (better) **staticGraphWithDragAndDrop** to **true** _<br/>
-<br/>
-**Note about granularity**<br/>
-Some of the properties listed in the [Node section][102] are marked with 🔍🔍🔍. This means that this properties
+These properties are marked with 🚅🚅🚅.</br>
+⭐ <b>tip</b> <i>to achieve smoother interactions you may want to provide a toggle to set <b>staticGraph</b> or (better) <b>staticGraphWithDragAndDrop</b> to <b>true</b></i></br>
+</br>
+<b>Note about granularity</b></br>
+Some of the properties listed in the <a href="#config-node">Node section</a> are marked with 🔍🔍🔍. This means that this properties
 have a higher level of granularity. These properties can be defined in the graph payload at a node level. (sample payload below)
 
 ```javascript
@@ -303,143 +375,166 @@ const graph = {
 };
 ```
 
-<br/>
+</br>
 
 -   <a href="#config-global">Graph global configurations</a>
 -   <a href="#config-d3">d3 level configurations</a>
 -   <a href="#config-node">Node level configurations</a>
 -   <a href="#config-link">Link level configurations</a>
 
-<br/>
+</br>
 
 <h2 id="config-global"><a href="#config-global">#</a>  Graph global configurations</h2>
 
-**Parameters**
+### Parameters
 
--   `automaticRearrangeAfterDropNode` **[boolean][97]** 🚅🚅🚅 when true performing a node drag and drop should automatically
-    rearrange all nodes positions based on new position of dragged node (note: **staticGraph** should be false). (optional, default `false`)
--   `collapsible` **[boolean][97]** 🚅🚅🚅 Allow leaf neighbors nodes to be collapsed (folded), this will allow users to clear the way out and focus on the parts of the graph that really matter.
-    To see an example of this behavior you can access this sandbox link that has a specific set up to experiment this feature. **NOTE**: At this moment
-    nodes without connections (orphan nodes) are not rendered when this property is activated (see [react-d3-graph/issues/#129][103]).
-    <br/>
+-   `automaticRearrangeAfterDropNode` **[boolean][182]** <a id="automatic-rearrange-after-drop-node" href="#automatic-rearrange-after-drop-node">🔗</a> 🚅🚅🚅 when true performing a node drag and drop should automatically
+    rearrange all nodes positions based on new position of dragged node (note: <b>staticGraph</b> should be false). A few notes on this property:<ul>
+    <li><b>automaticRearrangeAfterDropNode</b> needs to be set before the first graph render. Only the first set value will take effect.</li>
+    <li><b>automaticRearrangeAfterDropNode</b> won't work together with <b>nodeHighlightBehavior</b> (currently a known limitation, to be address in the future <a href="https://github.com/danielcaldas/react-d3-graph/issues/261" target="_blank">GitHub issue #261</a>).</li>
+    </ul> (optional, default `false`)
+-   `collapsible` **[boolean][182]** <a id="collapsible" href="#collapsible">🔗</a> 🚅🚅🚅 Allow leaf neighbors nodes to be collapsed (folded), this will allow users to clear the way out and focus on the parts of the graph that really matter.
+    To see an example of this behavior you can access <a href="https://danielcaldas.github.io/react-d3-graph/sandbox/index.html?data=marvel" target="_blank" title="sandbox collapsible example">this sandbox link</a> that has a specific set up to experiment this feature. <b>NOTE</b>: At this moment
+    nodes without connections (orphan nodes) are not rendered when this property is activated (see <a target="_blank" href="https://github.com/danielcaldas/react-d3-graph/issues/129">GitHub issue #129</a>).
+    </br>
     <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-collapsible.gif?raw=true" width="820" height="480"/> (optional, default `false`)
--   `directed` **[boolean][97]** This property makes react-d3-graph handle your graph as a directed graph. It will
+-   `directed` **[boolean][182]** <a id="directed" href="#directed">🔗</a> This property makes react-d3-graph handle your graph as a directed graph. It will
     out of the box provide the look and feel of a directed graph and add directional semantic to links. You can see a sample in the image below.
-    <br/>
+    </br>
     <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-directed.gif?raw=true" width="820" height="480"/> (optional, default `false`)
--   `focusZoom` **[number][96]** zoom that will be applied when the graph view is focused in a node. Its value must be between
-    _minZoom_ and _maxZoom_. If the specified _focusZoom_ is out of this range, _minZoom_ or _maxZoom_ will be applied instead.
-    **NOTE:** This animation is not trigger by default. In order to trigger it you need to pass down to `react-d3-graph` the
-    node that you want to focus via prop `focusedNodeId` along side with nodes and links:`javascript const data = { nodes: this.state.data.nodes, links: this.state.data.links, focusedNodeId: "nodeIdToTriggerZoomAnimation" };`<img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-zoom-animation.gif?raw=true" width="820" height="480"/> (optional, default `1`)
--   `focusAnimationDuration` **[number][96]** duration (in seconds) for the animation that takes place when focusing the graph on a node. (optional, default `0.75`)
--   `height` **[number][96]** the height of the (svg) area where the graph will be rendered. (optional, default `400`)
--   `nodeHighlightBehavior` **[boolean][97]** 🚅🚅🚅 when user mouse hovers a node that node and adjacent common
-    connections will be highlighted (depending on the _highlightDegree_ value). All the remaining nodes and links assume opacity value equal to **highlightOpacity**. (optional, default `false`)
--   `linkHighlightBehavior` **[boolean][97]** 🚅🚅🚅 when the user mouse hovers some link that link and the correspondent nodes will be highlighted, this is a similar behavior
-    to _nodeHighlightBehavior_ but for links <small>(just for historical reference this property was introduced in **v1.0.0**)</small>. (optional, default `false`)
--   `highlightDegree` **[number][96]** **Possible values: 0, 1 or 2**. This value represents the range of the
-    highlight behavior when some node is highlighted. If the value is set to **0** only the selected node will be
-    highlighted. If the value is set to **1** the selected node and his 1st degree connections will be highlighted. If
-    the value is set to **2** the selected node will be highlighted as well as the 1st and 2nd common degree connections. (optional, default `1`)
--   `highlightOpacity` **[number][96]** this value is used to highlight nodes in the network. The lower
-    the value the more the less highlighted nodes will be visible (related to _nodeHighlightBehavior_). (optional, default `1`)
--   `maxZoom` **[number][96]** max zoom that can be performed against the graph. (optional, default `8`)
--   `minZoom` **[number][96]** min zoom that can be performed against the graph. (optional, default `0.1`)
--   `panAndZoom` **[boolean][97]** 🚅🚅🚅 pan and zoom effect when performing zoom in the graph,
-    a similar functionality may be consulted [here][104]. (optional, default `false`)
--   `staticGraph` **[boolean][97]** when setting this value to true the graph will be completely static, thus
+-   `focusZoom` **[number][181]** <a id="focus-zoom" href="#focus-zoom">🔗</a> zoom that will be applied when the graph view is focused in a node. Its value must be between
+    <i>minZoom</i> and <i>maxZoom</i>. If the specified <i>focusZoom</i> is out of this range, <i>minZoom</i> or <i>maxZoom</i> will be applied instead.</br>
+    <b>NOTE</b>: This animation is not trigger by default. In order to trigger it you need to pass down to <code>react-d3-graph</code> the
+    node that you want to focus via prop <code>focusedNodeId</code> along side with nodes and links:`javascript const data = { nodes: this.state.data.nodes, links: this.state.data.links, focusedNodeId: "nodeIdToTriggerZoomAnimation" };`<img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-zoom-animation.gif?raw=true" width="820" height="480"/> (optional, default `1`)
+-   `focusAnimationDuration` **[number][181]** <a id="focus-animation-duration" href="#focus-animation-duration">🔗</a> duration (in seconds) for the animation that takes place when focusing the graph on a node. (optional, default `0.75`)
+-   `height` **[number][181]** <a id="height" href="#height">🔗</a> the height of the (svg) area where the graph will be rendered. (optional, default `400`)
+-   `nodeHighlightBehavior` **[boolean][182]** <a id="node-highlight-behavior" href="#node-highlight-behavior">🔗</a> 🚅🚅🚅 when user mouse hovers a node that node and adjacent common
+    connections will be highlighted (depending on the <i>highlightDegree</i> value). All the remaining nodes and links assume opacity value equal to <b>highlightOpacity</b>. (optional, default `false`)
+-   `linkHighlightBehavior` **[boolean][182]** <a id="link-highlight-behavior" href="#link-highlight-behavior">🔗</a> 🚅🚅🚅 when the user mouse hovers some link that link and the correspondent nodes will be highlighted, this is a similar behavior
+    to <i>nodeHighlightBehavior</i> but for links <small>(just for historical reference this property was introduced in <a target="_blank" href="https://github.com/danielcaldas/react-d3-graph/releases/tag/1.0.0">v1.0.0</a>)</small>. (optional, default `false`)
+-   `highlightDegree` **[number][181]** <a id="highlight-degree" href="#highlight-degree">🔗</a> <b>Possible values: 0, 1 or 2</b>. This value represents the range of the
+    highlight behavior when some node is highlighted. If the value is set to <b>0</b> only the selected node will be
+    highlighted. If the value is set to <b>1</b> the selected node and his 1st degree connections will be highlighted. If
+    the value is set to <b>2</b> the selected node will be highlighted as well as the 1st and 2nd common degree connections. (optional, default `1`)
+-   `highlightOpacity` **[number][181]** <a id="highlight-opacity" href="#highlight-opacity">🔗</a> this value is used to highlight nodes in the network. The lower
+    the value the more the less highlighted nodes will be visible (related to <i>nodeHighlightBehavior</i>). (optional, default `1`)
+-   `initialZoom` **[number][181]** <a id="max-zoom" href="#initial-zoom">🔗</a> initial zoom that can be set on the graph. (optional, default `null`)
+-   `maxZoom` **[number][181]** <a id="max-zoom" href="#max-zoom">🔗</a> max zoom that can be performed against the graph. (optional, default `8`)
+-   `minZoom` **[number][181]** <a id="min-zoom" href="#min-zoom">🔗</a> min zoom that can be performed against the graph. (optional, default `0.1`)
+-   `panAndZoom` **[boolean][182]** <a id="pan-and-zoom" href="#pan-and-zoom">🔗</a> 🚅🚅🚅 pan and zoom effect when performing zoom in the graph,
+    a similar functionality may be consulted <a target="_blank" href="https://bl.ocks.org/mbostock/2a39a768b1d4bc00a09650edef75ad39">here</a>. (optional, default `false`)
+-   `staticGraph` **[boolean][182]** <a id="static-graph" href="#static-graph">🔗</a> when setting this value to true the graph will be completely static, thus
     all forces and drag events upon nodes will produce not effect. Note that, if this value is true the nodes will be
-    rendered with the initial provided **x and y coordinates** (links positions will be automatically set
+    rendered with the initial provided <b>x and y coordinates</b> (links positions will be automatically set
     from the given nodes positions by rd3g), no coordinates will be calculated by rd3g or subjacent d3 modules. (optional, default `false`)
--   `staticGraphWithDragAndDrop` **[boolean][97]?** exactly the same as above `staticGraph`, but it will allow users to drag&drop nodes.
-    **Note**: If `staticGraph` is set to `true`, then `staticGraphWithDragAndDrop` will not produce the desired behaviour, make sure
-    to set only one of them to `true`.
--   `width` **[number][96]** the width of the (svg) area where the graph will be rendered.
-    <br/> (optional, default `800`)
--   `d3` **[Object][99]** d3 object is explained in next section. ⬇️<h2 id="config-d3"><a href="#config-d3">#</a> d3 level configurations</h2>
-    -   `d3.alphaTarget` **[number][96]** [see d3-force simulation.alphaTarget][105] (optional, default `0.05`)
-    -   `d3.gravity` **[number][96]** this will define how close nodes are to each other ([see d3 reference for forces][106]).- If value is positive, nodes will attract each other.
+-   `staticGraphWithDragAndDrop` **[boolean][182]?** <a id="static-graph-with-drag-and-drop" href="#static-graph-with-drag-and-drop">🔗</a> exactly the same as above <code>staticGraph</code>, but it will allow users to drag&drop nodes.
+    <b>Note</b>: If <code>staticGraph</code> is set to <code>true</code>, then <code>staticGraphWithDragAndDrop</code> will not produce the desired behaviour, make sure
+    to set only one of them to <code>true</code>.
+-   `width` **[number][181]** <a id="width" href="#width">🔗</a> the width of the (svg) area where the graph will be rendered.
+    </br> (optional, default `800`)
+-   `d3` **[Object][184]** d3 object is explained in next section. ⬇️<h2 id="config-d3"><a href="#config-d3">#</a> d3 level configurations</h2>
+    -   `d3.alphaTarget` **[number][181]** <a id="d3-alpha-target" href="#d3-alpha-target">🔗</a> <a target="_blank" href="https://github.com/d3/d3-force#simulation_alphaTarget">see d3-force simulation.alphaTarget</a> (optional, default `0.05`)
+    -   `d3.gravity` **[number][181]** <a id="d3-gravity" href="#d3-gravity">🔗</a> this will define how close nodes are to each other <a target="_blank" href="https://github.com/d3/d3-force#forces">see d3 reference for forces</a>.- If value is positive, nodes will attract each other.
         -   If value is negative, nodes will repel each other. Most of the times this is what we want, so nodes don"t overlap. (optional, default `-100`)
-    -   `d3.linkLength` **[number][96]** the length of each link from the center of the nodes it joins. (optional, default `100`)
-    -   `d3.linkStrength` **[number][96]** [see d3-force link.strength][107]
-        <br/> (optional, default `1`)
--   `node` **[Object][99]** node object is explained in next section. ⬇️<h2 id="config-node"><a href="#config-node">#</a> Node level configurations</h2>
-    -   `node.color` **[string][98]** 🔍🔍🔍 this is the color that will be applied to the node if no **color property**
-        is found inside the node itself (yes **you can pass a property "color" inside the node and that color will override the
-        this default one**). (optional, default `"#d3d3d3"`)
-    -   `node.fontColor` **[string][98]** 🔍🔍🔍 fill color for node"s <text> svg label. (optional, default `"black"`)
-    -   `node.fontSize` **[number][96]** [font-size][108]
+    -   `d3.linkLength` **[number][181]** <a id="d3-link-length" href="#d3-link-length">🔗</a> the length of each link from the center of the nodes it joins. (optional, default `100`)
+    -   `d3.linkStrength` **[number][181]** <a id="d3-link-strength" href="#d3-link-strength">🔗</a> <a target="_blank" href="https://github.com/d3/d3-force#link_strength">see d3-force link.strength</a> (optional, default `1`)
+    -   `d3.disableLinkForce` **[boolean][182]** <a id="d3-disable-link-force" href="#d3-disable-link-force">🔗</a> ⚠️🧪EXPERIMENTAL🧪⚠️ it completely disables d3 force link and simulation to re-trigger so that one can obtain
+        precise render of node positions as described by the author <a target="_blank" href="https://github.com/antoninklopp">@antoninklopp</a> in <a target="_blank" href="https://github.com/danielcaldas/react-d3-graph/pull/278">the Pull Request description</a>.
+        </br> (optional, default `false`)
+-   `node` **[Object][184]** node object is explained in next section. ⬇️<h2 id="config-node"><a href="#config-node">#</a> Node level configurations</h2>
+    -   `node.color` **[string][183]** <a id="node-color" href="#node-color">🔗</a> 🔍🔍🔍 this is the color that will be applied to the node if no <b>color property</b></br>
+        is found inside the node itself (yes <b>you can pass a property "color" inside</b></br>
+        <b>the node and that color will override the this default one</b>). (optional, default `"#d3d3d3"`)
+    -   `node.fontColor` **[string][183]** <a id="node-font-color" href="#node-font-color">🔗</a> 🔍🔍🔍 fill color for node"s <text> svg label. (optional, default `"black"`)
+    -   `node.fontSize` **[number][181]** <a id="node-font-size" href="#node-font-size">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?v=control">font-size</a>
         property for all nodes" labels. (optional, default `8`)
-    -   `node.fontWeight` **[string][98]** [font-weight][109]
+    -   `node.fontWeight` **[string][183]** <a id="node-font-weight" href="#node-font-weight">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/CSS/font-weight?v=control">font-weight</a>
         property for all nodes" labels. (optional, default `"normal"`)
-    -   `node.highlightColor` **[string][98]** color for all highlighted nodes (use string "SAME" if you
+    -   `node.highlightColor` **[string][183]** <a id="node-highlight-color" href="#node-highlight-color">🔗</a> color for all highlighted nodes (use string "SAME" if you
         want the node to keep its color in highlighted state). (optional, default `"SAME"`)
-    -   `node.highlightFontSize` **[number][96]** fontSize in highlighted state. (optional, default `8`)
-    -   `node.highlightFontWeight` **[string][98]** fontWeight in highlighted state. (optional, default `"normal"`)
-    -   `node.highlightStrokeColor` **[string][98]** strokeColor in highlighted state. (optional, default `"SAME"`)
-    -   `node.highlightStrokeWidth` **[number][96]** strokeWidth in highlighted state. (optional, default `"SAME"`)
-    -   `node.labelProperty` **([string][98] \| [Function][101])** this is the node property that will be used in runtime to
-        fetch the label content. You just need to add some property (e.g. firstName) to the node payload and then set
-        node.labelProperty to be **"firstName"**. **This can also be a function!**, if you pass a function here it will be called
-        to obtain the `label` value on the fly, as a client you will receive all the node information that you passed down into react-d3-graph,
-        so the signature of the function would be:`javascript function myCustomLabelBuilder(node) { // do stuff to get the final result... return "label string"; }`Then you just need to make sure that you pass this function in the config in `config.node.labelProperty`.
-        <br/> (optional, default `"id"`)
-    -   `node.mouseCursor` **[string][98]** [cursor][110]
+    -   `node.highlightFontSize` **[number][181]** <a id="node-highlight-font-size" href="#node-highlight-font-size">🔗</a> fontSize in highlighted state. (optional, default `8`)
+    -   `node.highlightFontWeight` **[string][183]** <a id="node-highlight-font-weight" href="#node-highlight-font-weight">🔗</a> fontWeight in highlighted state. (optional, default `"normal"`)
+    -   `node.highlightStrokeColor` **[string][183]** <a id="node-stroke-color" href="#node-stroke-color">🔗</a> strokeColor in highlighted state. (optional, default `"SAME"`)
+    -   `node.highlightStrokeWidth` **[number][181]** <a id="node-stroke-width" href="#node-stroke-width">🔗</a> strokeWidth in highlighted state. (optional, default `"SAME"`)
+    -   `node.labelPosition` **[string][183]** <a id="node-label-position" href="#node-label-position">🔗</a> 🔍🔍🔍 location to place node label relative to node.
+        The placement options are:- "left"
+        -   "right"
+        -   "top"
+        -   "bottom"
+        -   "center"<b>[note]</b> not specifying a label position will fallback to the original placement scheme of to the right of the node. This is different than the implementation for "right", which has the label shifted very slightly upward compared to the original. (optional, default `null`)
+    -   `node.labelProperty` **([string][183] \| [Function][186])** <a id="node-label-property" href="#node-label-property">🔗</a> this is the node property that will be used in runtime to</br>
+        fetch the label content. You just need to add some property (e.g. firstName) to the node payload and then set</br>
+        node.labelProperty to be <b>"firstName"</b>. <b>This can also be a function!</b>, if you pass a function here it will be called</br>
+        to obtain the <code>label</code> value on the fly, as a client you will receive all the node information that you passed down into react-d3-graph,</br>
+        so the signature of the function would be:```javascript
+        function myCustomLabelBuilder(node) {
+        // do stuff to get the final result...
+        return "label string";
+        }
+        ```Then you just need to make sure that you pass this function in the config in <code>config.node.labelProperty</code>.
+        </br> (optional, default `"id"`)
+        ```
+    -   `node.mouseCursor` **[string][183]** <a id="node-pointer" href="#node-pointer">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/CSS/cursor?v=control">cursor</a>
         property for when some node is mouse hovered. (optional, default `"pointer"`)
-    -   `node.opacity` **[number][96]** 🔍🔍🔍 - by default all nodes will have this opacity value. (optional, default `1`)
-    -   `node.renderLabel` **[boolean][97]** when set to false no labels will appear along side nodes in the
+    -   `node.opacity` **[number][181]** <a id="node-opacity" href="#node-opacity">🔗</a> 🔍🔍🔍 by default all nodes will have this opacity value. (optional, default `1`)
+    -   `node.renderLabel` **[boolean][182]** <a id="node-render-label" href="#node-render-label">🔗</a> 🔍🔍🔍 when set to false no labels will appear along side nodes in the
         graph. (optional, default `true`)
-    -   `node.size` **[number][96]** 🔍🔍🔍 defines the size of all nodes. (optional, default `200`)
-    -   `node.strokeColor` **[string][98]** 🔍🔍🔍 this is the stroke color that will be applied to the node if no **strokeColor property** is found inside the node itself (yes **you can pass a property "strokeColor" inside the node and that stroke color will override this default one** ). (optional, default `"none"`)
-    -   `node.strokeWidth` **[number][96]** 🔍🔍🔍 - the width of the all node strokes. (optional, default `1.5`)
-    -   `node.svg` **[string][98]** 🔍🔍🔍 render custom svg for nodes in alternative to **node.symbolType**. This svg can
+    -   `node.size` **([number][181] \| [Object][184])** <a id="node-size" href="#node-size">🔗</a> 🔍🔍🔍 defines the size of all nodes. When set to a number, the node will have equal height and width.</br>
+        This can also be an object with a height and width property <b>when using custom nodes</b>.`javascript size: 200 // or size: { height: 200, width: 300, }`The actual node dimensions (in px) rendered on screen will be the size value divided by 10. For example, a node size of 200 will result in a node with a height and width of 20px. (optional, default `200`)
+    -   `node.strokeColor` **[string][183]** <a id="node-stroke-color" href="#node-stroke-color">🔗</a> 🔍🔍🔍 this is the stroke color that will be applied to the node if no <b>strokeColor property</b> is found inside the node itself (yes <b>you can pass a property "strokeColor" inside the node and that stroke color will override this default one</b>). (optional, default `"none"`)
+    -   `node.strokeWidth` **[number][181]** <a id="node-stroke-width" href="#node-stroke-width">🔗</a> 🔍🔍🔍 the width of the all node strokes. (optional, default `1.5`)
+    -   `node.svg` **[string][183]** <a id="node-svg" href="#node-svg">🔗</a> 🔍🔍🔍 render custom svg for nodes in alternative to <b>node.symbolType</b>. This svg can
         be provided as a string to either a remote svg resource or for a local one.
-        <br/>
+        </br>
         <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-custom-svg.gif?raw=true" width="820" height="480"/> (optional, default `""`)
-    -   `node.symbolType` **[string][98]** 🔍🔍🔍 the <span id="node-symbol-type">shape</span> of the node.
-        Use the following values under a property **type** inside each node (nodes may have different types, same as colors):- "circle"
+    -   `node.symbolType` **[string][183]** <a id="node-symbol-type" href="#node-symbol-type">🔗</a> 🔍🔍🔍 the <a id="node-symbol-type">shape</span> of the node.
+        Use the following values under a property <b>type</b> inside each node (nodes may have different types, same as colors):- "circle"
         -   "cross"
         -   "diamond"
         -   "square"
         -   "star"
         -   "triangle"
-        -   "wye"**[note]** react-d3-graph will map this values to [d3 symbols][111] (optional, default `"circle"`)
-    -   `node.viewGenerator` **[Function][101]** 🔍🔍🔍 function that receives a node and returns a JSX view.
-        <br/> (optional, default `null`)
--   `link` **[Object][99]** link object is explained in the next section. ⬇️<h2 id="config-link"><a href="#config-link">#</a> Link level configurations</h2>
-    -   `link.color` **[string][98]** 🔍🔍🔍 the color for links
+        -   "wye"<b>\[note]</b> react-d3-graph will map this values to <a target="_blank" href="https://github.com/d3/d3-shape#symbols">d3 symbols</a> (optional, default `"circle"`)
+    -   `node.viewGenerator` **[Function][186]** <a id="node-view-generator" href="#node-view-generator">🔗</a> 🔍🔍🔍 function that receives a node and returns a JSX view.
+        </br> (optional, default `null`)
+-   `link` **[Object][184]** link object is explained in the next section. ⬇️<h2 id="config-link"><a href="#config-link">#</a> Link level configurations</h2>
+    -   `link.color` **[string][183]** <a id="link-color" href="#link-color">🔗</a> 🔍🔍🔍 the color for links
         (from version 1.3.0 this property can be configured at link level). (optional, default `"#d3d3d3"`)
-    -   `link.fontColor` **[string][98]** 🔍🔍🔍 fill color for link's <text> svg label. (optional, default `"black"`)
-    -   `link.fontSize` **[number][96]** [font-size][108]
+    -   `link.fontColor` **[string][183]** <a id="link-font-color" href="#link-font-color">🔗</a> 🔍🔍🔍 fill color for link's <text> svg label. (optional, default `"black"`)
+    -   `link.fontSize` **[number][181]** <a id="link-font-size" href="#link-font-size">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?v=control">font-size</a>
         property for all links' labels. (optional, default `8`)
-    -   `link.fontWeight` **[string][98]** [font-weight][109]
+    -   `link.fontWeight` **[string][183]** <a id="link-font-weight" href="#link-font-weight">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/CSS/font-weight?v=control">font-weight</a>
         property for all links' labels. (optional, default `"normal"`)
-    -   `link.highlightColor` **[string][98]** links' color in highlight state.
-        <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-bend.gif?raw=true" width="820" height="480"/> (optional, default `"#d3d3d3"`)
-    -   `link.highlightFontSize` **[number][96]** fontSize in highlighted state. (optional, default `8`)
-    -   `link.highlightFontWeight` **[string][98]** fontWeight in highlighted state. (optional, default `"normal"`)
-    -   `link.labelProperty` **([string][98] \| [Function][101])** the property that will be rendered as label within some link. Note that
-        this property needs to be passed along the link payload (along side with source and target). This property can also be a function
-        that receives the link itself as argument and returns a custom string, similarly to what happens with `node.labelProperty`. (optional, default `"label"`)
-    -   `link.mouseCursor` **[string][98]** [cursor][110]
+    -   `link.highlightColor` **[string][183]** <a id="link-highlight-color" href="#link-highlight-color">🔗</a> links' color in highlight state, default being the same color as `link.color`.
+        <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-bend.gif?raw=true" width="820" height="480"/> (optional, default `"SAME"`)
+    -   `link.highlightFontSize` **[number][181]** <a id="link-highlight-font-size" href="#link-highlight-font-size">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?v=control">font-size</a> in highlighted state. (optional, default `8`)
+    -   `link.highlightFontWeight` **[string][183]** <a id="link-highlight-font-weight" href="#link-highlight-font-weight">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/CSS/font-weight?v=control">font-weight</a> in highlighted state. (optional, default `"normal"`)
+    -   `link.labelProperty` **([string][183] \| [Function][186])** <a id="link-label-property" href="#link-label-property">🔗</a> the property that will be rendered as label within some link. Note that</br>
+        this property needs to be passed along the link payload (along side with source and target). This property can also be a function</br>
+        that receives the link itself as argument and returns a custom string, similarly to what happens with <code>node.labelProperty</code>.</br> (optional, default `"label"`)
+    -   `link.mouseCursor` **[string][183]** <a id="link-mouse-cursor" href="#link-mouse-cursor">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/CSS/cursor?v=control">cursor</a>
         property for when link is mouse hovered. (optional, default `"pointer"`)
-    -   `link.opacity` **[number][96]** 🔍🔍🔍 - the default opacity value for links. (optional, default `1`)
-    -   `link.renderLabel` **[boolean][97]** when set to true labels will appear along side links in the
-        graph. **Note**: this will only happen of course if proper label is passed within the link, check also `link.labelProperty`.
-        <br/>
+    -   `link.opacity` **[number][181]** 🔍🔍🔍 - <a href="#link-opacity" href="">🔗</a> the default opacity value for links. (optional, default `1`)
+    -   `link.renderLabel` **[boolean][182]** <a id="link-render-label" href="#link-render-label">🔗</a> when set to true labels will appear along side links in the
+        graph. <b>Note</b>: this will only happen of course if proper label is passed within the link, check also <code>link.labelProperty</code>.
+        </br>
         <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-link-render-label.png?raw=true" width="820" height="480"/> (optional, default `false`)
-    -   `link.semanticStrokeWidth` **[boolean][97]** when set to true all links will have
-        _"semantic width"_, this means that the width of the connections will be proportional to the value of each link.
+    -   `link.semanticStrokeWidth` **[boolean][182]** <a id="link-semantic-stroke-width" href="#link-semantic-stroke-width">🔗</a> when set to true all links will have
+        <i>"semantic width"</i>, this means that the width of the connections will be proportional to the value of each link.
         This is how link strokeWidth will be calculated:`javascript strokeWidth += (linkValue * strokeWidth) / 10;` (optional, default `false`)
-    -   `link.strokeWidth` **[number][96]** 🔍🔍🔍 - strokeWidth for all links. By default the actual value is obtain by the
+    -   `link.strokeWidth` **[number][181]** <a id="link-stroke-width" href="#link-stroke-width">🔗</a> 🔍🔍🔍 strokeWidth for all links. By default the actual value is obtain by the
         following expression:`javascript link.strokeWidth * (1 / transform); // transform is a zoom delta Δ value` (optional, default `1.5`)
-    -   `link.type` **[string][98]** the type of line to draw, available types at this point are:- "STRAIGHT" <small>(default)</small> - a straight line.
+    -   `link.markerHeight` **[number][181]** <a id="link-marker-height" href="#link-marker-height">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/SVG/Attribute/markerHeight">markerHeight</a>
+        property for the link arrowhead height. _Note: this property can only be set in the first mount, it does not update dynamically._ (optional, default `6`)
+    -   `link.markerWidth` **[number][181]** <a id="link-marker-width" href="#link-marker-width">🔗</a> <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/SVG/Attribute/markerWidth">markerWidth</a>
+        property for the link arrowhead width. _Note: this property can only be set in the first mount, it does not update dynamically._ (optional, default `6`)
+    -   `link.type` **[string][183]** <a id="link-type" href="#link-type">🔗</a> 🔍🔍🔍 the type of line to draw, available types at this point are:- "STRAIGHT" <small>(default)</small> - a straight line.
         -   "CURVE_SMOOTH" - a slight curve between two nodes
         -   "CURVE_FULL" - a semicircumference trajectory unites source and target nodes.
-            <br/>
+            </br>
             <img src="https://github.com/danielcaldas/react-d3-graph/blob/master/docs/rd3g-bend.gif?raw=true" width="820" height="480"/> (optional, default `"STRAIGHT"`)
 
-**Examples**
+### Examples
 
 ```javascript
 // A simple config that uses some properties
@@ -464,40 +559,40 @@ Offers a series of methods that isolate logic of Graph component and also from G
 
 ### Link
 
-Type: [Object][99]
+Type: [Object][184]
 
-**Properties**
+#### Properties
 
--   `source` **[string][98]** the node id of the source in the link.
--   `target` **[string][98]** the node id of the target in the link.
+-   `source` **[string][183]** the node id of the source in the link.
+-   `target` **[string][183]** the node id of the target in the link.
 
 ### Node
 
-Type: [Object][99]
+Type: [Object][184]
 
-**Properties**
+#### Properties
 
--   `id` **[string][98]** the id of the node.
--   `color` **[string][98]?** color of the node (optional).
--   `fontColor` **[string][98]?** node text label font color (optional).
--   `size` **[string][98]?** size of the node (optional).
--   `symbolType` **[string][98]?** symbol type of the node (optional).
--   `svg` **[string][98]?** custom svg for node (optional).
+-   `id` **[string][183]** the id of the node.
+-   `color` **[string][183]?** color of the node (optional).
+-   `fontColor` **[string][183]?** node text label font color (optional).
+-   `size` **[string][183]?** size of the node (optional).
+-   `symbolType` **[string][183]?** symbol type of the node (optional).
+-   `svg` **[string][183]?** custom svg for node (optional).
 
 ### \_createForceSimulation
 
 Create d3 forceSimulation to be applied on the graph.<br/>
-[d3-force#forceSimulation][112]<br/>
-[d3-force#simulation_force][113]<br/>
-Wtf is a force? [ here][106]
+[d3-force#forceSimulation][187]<br/>
+[d3-force#simulation_force][188]<br/>
+Wtf is a force? [ here][189]
 
-**Parameters**
+#### Parameters
 
--   `width` **[number][96]** the width of the container area of the graph.
--   `height` **[number][96]** the height of the container area of the graph.
--   `gravity` **[number][96]** the force strength applied to the graph.
+-   `width` **[number][181]** the width of the container area of the graph.
+-   `height` **[number][181]** the height of the container area of the graph.
+-   `gravity` **[number][181]** the force strength applied to the graph.
 
-Returns **[Object][99]** returns the simulation instance to be consumed.
+Returns **[Object][184]** returns the simulation instance to be consumed.
 
 ### \_initializeLinks
 
@@ -505,12 +600,12 @@ Receives a matrix of the graph with the links source and target as concrete node
 in a lightweight matrix containing only links with source and target being strings representative of some node id
 and the respective link value (if non existent will default to 1).
 
-**Parameters**
+#### Parameters
 
--   `graphLinks` **[Array][100]&lt;[Link][114]>** an array of all graph links.
--   `config` **[Object][99]** the graph config.
+-   `graphLinks` **[Array][185]&lt;[Link][190]>** an array of all graph links.
+-   `config` **[Object][184]** the graph config.
 
-Returns **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph, for each nodeId,
+Returns **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph, for each nodeId,
 there is an object that maps adjacent nodes ids (string) and their values (number).
 
 ### \_initializeNodes
@@ -519,11 +614,11 @@ Method that initialize graph nodes provided by rd3g consumer and adds additional
 that are optional for the user. Also it generates an index mapping, this maps nodes ids the their index in the array
 of nodes. This is needed because d3 callbacks such as node click and link click return the index of the node.
 
-**Parameters**
+#### Parameters
 
--   `graphNodes` **[Array][100]&lt;[Node][115]>** the array of nodes provided by the rd3g consumer.
+-   `graphNodes` **[Array][185]&lt;[Node][191]>** the array of nodes provided by the rd3g consumer.
 
-Returns **[Object][99]&lt;[string][98], [Object][99]>** returns the nodes ready to be used within rd3g with additional properties such as x, y
+Returns **[Object][184]&lt;[string][183], [Object][184]>** returns the nodes ready to be used within rd3g with additional properties such as x, y
 and highlighted values.
 
 ### \_mergeDataLinkWithD3Link
@@ -532,62 +627,63 @@ Maps an input link (with format `{ source: 'sourceId', target: 'targetId' }`) to
 (with format `{ source: { id: 'sourceId' }, target: { id: 'targetId' } }`). If d3Link with
 given index exists already that same d3Link is returned.
 
-**Parameters**
+#### Parameters
 
--   `link` **[Object][99]** input link.
--   `index` **[number][96]** index of the input link.
--   `d3Links` **[Array][100]&lt;[Object][99]>** all d3Links. (optional, default `[]`)
--   `config` **[Object][99]** same as [config in renderGraph][70].
--   `state` **[Object][99]** Graph component current state (same format as returned object on this function). (optional, default `{}`)
+-   `link` **[Object][184]** input link.
+-   `index` **[number][181]** index of the input link.
+-   `d3Links` **[Array][185]&lt;[Object][184]>** all d3Links. (optional, default `[]`)
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+-   `state` **[Object][184]** Graph component current state (same format as returned object on this function). (optional, default `{}`)
 
-Returns **[Object][99]** a d3Link.
+Returns **[Object][184]** a d3Link.
 
 ### \_tagOrphanNodes
 
 Tags orphan nodes with a `_orphan` flag.
 
-**Parameters**
+#### Parameters
 
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** nodes mapped by their id.
--   `linksMatrix` **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph, for each nodeId,
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** nodes mapped by their id.
+-   `linksMatrix` **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph, for each nodeId,
     there is an object that maps adjacent nodes ids (string) and their values (number).
 
-Returns **[Object][99]&lt;[string][98], [Object][99]>** same input nodes structure with tagged orphans nodes where applicable.
+Returns **[Object][184]&lt;[string][183], [Object][184]>** same input nodes structure with tagged orphans nodes where applicable.
 
 ### \_validateGraphData
 
 Some integrity validations on links and nodes structure. If some validation fails the function will
 throw an error.
 
-**Parameters**
+#### Parameters
 
--   `data` **[Object][99]** Same as [data in initializeGraphState][116].
+-   `data` **[Object][184]** Same as [data in initializeGraphState][192].
 
-*   Throws **any** can throw the following error msg:
+*   Throws **any** can throw the following error or warning msg:
     INSUFFICIENT_DATA - msg if no nodes are provided
     INVALID_LINKS - if links point to nonexistent nodes
+    INSUFFICIENT_LINKS - if no links are provided (not even empty Array)
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_pickId
 
 Picks the id.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** object to pick from.
+-   `o` **[Object][184]** object to pick from.
 
-Returns **[Object][99]** new object with id property only.
+Returns **[Object][184]** new object with id property only.
 
 ### \_pickSourceAndTarget
 
 Picks source and target.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** object to pick from.
+-   `o` **[Object][184]** object to pick from.
 
-Returns **[Object][99]** new object with source and target only.
+Returns **[Object][184]** new object with source and target only.
 
 ### checkForGraphElementsChanges
 
@@ -595,12 +691,12 @@ This function checks for graph elements (nodes and links) changes, in two differ
 levels of significance, updated elements (whether some property has changed in some
 node or link) and new elements (whether some new elements or added/removed from the graph).
 
-**Parameters**
+#### Parameters
 
--   `nextProps` **[Object][99]** nextProps that graph will receive.
--   `currentState` **[Object][99]** the current state of the graph.
+-   `nextProps` **[Object][184]** nextProps that graph will receive.
+-   `currentState` **[Object][184]** the current state of the graph.
 
-Returns **[Object][99]&lt;[string][98], [boolean][97]>** returns object containing update check flags:- newGraphElements - flag that indicates whether new graph elements were added.
+Returns **[Object][184]&lt;[string][183], [boolean][182]>** returns object containing update check flags:- newGraphElements - flag that indicates whether new graph elements were added.
 
 -   graphElementsUpdated - flag that indicates whether some graph elements have
     updated (some property that is not in NODE_PROPERTIES_DISCARD_TO_COMPARE was added to
@@ -610,12 +706,12 @@ Returns **[Object][99]&lt;[string][98], [boolean][97]>** returns object containi
 
 Logic to check for changes in graph config.
 
-**Parameters**
+#### Parameters
 
--   `nextProps` **[Object][99]** nextProps that graph will receive.
--   `currentState` **[Object][99]** the current state of the graph.
+-   `nextProps` **[Object][184]** nextProps that graph will receive.
+-   `currentState` **[Object][184]** the current state of the graph.
 
-Returns **[Object][99]&lt;[string][98], [boolean][97]>** returns object containing update check flags:- configUpdated - global flag that indicates if any property was updated.
+Returns **[Object][184]&lt;[string][183], [boolean][182]>** returns object containing update check flags:- configUpdated - global flag that indicates if any property was updated.
 
 -   d3ConfigUpdated - specific flag that indicates changes in d3 configurations.
 
@@ -624,41 +720,88 @@ Returns **[Object][99]&lt;[string][98], [boolean][97]>** returns object containi
 Returns the transformation to apply in order to center the graph on the
 selected node.
 
-**Parameters**
+#### Parameters
 
--   `d3Node` **[Object][99]** node to focus the graph view on.
--   `config` **[Object][99]** same as [config in renderGraph][70].
+-   `d3Node` **[Object][184]** node to focus the graph view on.
+-   `config` **[Object][184]** same as [config in renderGraph][132].
 
-Returns **[string][98]** transform rule to apply.
+Returns **([string][183] \| [undefined][193])** transform rule to apply.
+
+### getId
+
+This function extracts an id from a link.
+**Why this function?**
+According to [d3-force][194]
+d3 links might be initialized with "source" and "target"
+properties as numbers or strings, but after initialization they
+are converted to an object. This small utility functions ensures
+that weather in initialization or further into the lifetime of the graph
+we always get the id.
+
+#### Parameters
+
+-   `sot` **([Object][184] \| [string][183] \| [number][181])** source or target
+    of the link to extract id.
+    we want to extract an id.
+
+Returns **([string][183] \| [number][181])** the id of the link.
 
 ### initializeGraphState
 
 Encapsulates common procedures to initialize graph.
 
-**Parameters**
+#### Parameters
 
--   `props` **[Object][99]** Graph component props, object that holds data, id and config.
-    -   `props.data` **[Object][99]** Data object holds links (array of **Link**) and nodes (array of **Node**).
-    -   `props.id` **[string][98]** the graph id.
-    -   `props.config` **[Object][99]** same as [config in renderGraph][70].
--   `state` **[Object][99]** Graph component current state (same format as returned object on this function).
+-   `props` **[Object][184]** Graph component props, object that holds data, id and config.
+    -   `props.data` **[Object][184]** Data object holds links (array of **Link**) and nodes (array of **Node**).
+    -   `props.id` **[string][183]** the graph id.
+    -   `props.config` **[Object][184]** same as [config in renderGraph][132].
+-   `state` **[Object][184]** Graph component current state (same format as returned object on this function).
 
-Returns **[Object][99]** a fully (re)initialized graph state object.
+Returns **[Object][184]** a fully (re)initialized graph state object.
 
 ### updateNodeHighlightedValue
 
 This function updates the highlighted value for a given node and also updates highlight props.
 
-**Parameters**
+#### Parameters
 
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** an object containing all nodes mapped by their id.
--   `links` **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph.
--   `config` **[Object][99]** an object containing rd3g consumer defined configurations [config][118] for the graph.
--   `id` **[string][98]** identifier of node to update.
--   `value` **[string][98]** new highlight value for given node. (optional, default `false`)
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** an object containing all nodes mapped by their id.
+-   `links` **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph.
+-   `config` **[Object][184]** an object containing rd3g consumer defined configurations [config][195] for the graph.
+-   `id` **[string][183]** identifier of node to update.
+-   `value` **[string][183]** new highlight value for given node. (optional, default `false`)
 
-Returns **[Object][99]** returns an object containing the updated nodes
+Returns **[Object][184]** returns an object containing the updated nodes
 and the id of the highlighted node.
+
+### normalize
+
+Computes the normalized vector from a vector.
+
+#### Parameters
+
+-   `vector` **[Object][184]** a 2D vector with x and y components
+    -   `vector.x` **[number][181]** x coordinate
+    -   `vector.y` **[number][181]** y coordinate
+
+Returns **[Object][184]** normalized vector
+
+### getNormalizedNodeCoordinates
+
+Computes new node coordinates to make arrowheads point at nodes.
+Arrow configuration is only available for circles.
+
+#### Parameters
+
+-   `node` **[Object][184]** the couple of nodes we need to compute new coordinates
+    -   `node.source` **[Object][184]** node source (optional, default `{}`)
+    -   `node.target` **[Object][184]** node target (optional, default `{}`)
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** same as [nodes in renderGraph][132].
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+-   `strokeWidth` **[number][181]** width of the link stroke
+
+Returns **[Object][184]** new nodes coordinates
 
 ## Link/const
 
@@ -666,13 +809,13 @@ A set of constants that facilitate readability regarding links.
 
 ### LINE_TYPES
 
-Type: [Object][99]
+Type: [Object][184]
 
-**Properties**
+#### Properties
 
--   `STRAIGHT` **[string][98]** a straight line.
--   `CURVE_SMOOTH` **[string][98]** a slight curve between two nodes
--   `CURVE_FULL` **[string][98]** a semicircumference trajectory unites source and target nodes.
+-   `STRAIGHT` **[string][183]** a straight line.
+-   `CURVE_SMOOTH` **[string][183]** a slight curve between two nodes
+-   `CURVE_FULL` **[string][183]** a semicircumference trajectory unites source and target nodes.
 
 ## Link/helper
 
@@ -682,53 +825,53 @@ A set of helper methods to manipulate/create links.
 
 Computes radius value for a straight line.
 
-Returns **[number][96]** radius for straight line.
+Returns **[number][181]** radius for straight line.
 
 ### smoothCurveRadius
 
 Computes radius for a smooth curve effect.
 
-**Parameters**
+#### Parameters
 
--   `x1` **[number][96]** x value for point 1
--   `y1` **[number][96]** y value for point 1
--   `x2` **[number][96]** y value for point 2
--   `y2` **[number][96]** y value for point 2
+-   `x1` **[number][181]** x value for point 1
+-   `y1` **[number][181]** y value for point 1
+-   `x2` **[number][181]** y value for point 2
+-   `y2` **[number][181]** y value for point 2
 
-Returns **[number][96]** value of radius.
+Returns **[number][181]** value of radius.
 
 ### fullCurveRadius
 
 Computes radius value for a full curve (semi circumference).
 
-Returns **[number][96]** radius for full curve.
+Returns **[number][181]** radius for full curve.
 
 ### getRadiusStrategy
 
 Get a strategy to compute line radius.<br/>
-_CURVE_SMOOTH_ type inspired by [mbostock - Mobile Patent Suits][119].
+_CURVE_SMOOTH_ type inspired by [mbostock - Mobile Patent Suits][196].
 
-**Parameters**
+#### Parameters
 
--   `type` **[string][98]** type of curve to get radius strategy from. (optional, default `LINE_TYPES.STRAIGHT`)
+-   `type` **[string][183]** type of curve to get radius strategy from. (optional, default `LINE_TYPES.STRAIGHT`)
 
-Returns **[Function][101]** a function that calculates a radius
+Returns **[Function][186]** a function that calculates a radius
 to match curve type expectation. Fallback is the straight line.
 
 ### buildLinkPathDefinition
 
 This method returns the path definition for a given link base on the line type
 and the link source and target.
-[d attribute mdn][120]
+[d attribute mdn][197]
 
-**Parameters**
+#### Parameters
 
--   `link` **[Object][99]** the link to build the path definition
-    -   `link.source` **[Object][99]** link source (optional, default `{}`)
-    -   `link.target` **[Object][99]** link target (optional, default `{}`)
--   `type` **[string][98]** the link line type (optional, default `LINE_TYPES.STRAIGHT`)
+-   `link` **[Object][184]** the link to build the path definition
+    -   `link.source` **[Object][184]** link source (optional, default `{}`)
+    -   `link.target` **[Object][184]** link target (optional, default `{}`)
+-   `type` **[string][183]** the link line type (optional, default `LINE_TYPES.STRAIGHT`)
 
-Returns **[string][98]** the path definition for the requested link
+Returns **[string][183]** the path definition for the requested link
 
 ## Marker/helper
 
@@ -737,41 +880,40 @@ Offers a series of methods to compute proper markers within a given context.
 ### \_markerKeyBuilder
 
 This function is a key template builder to access MARKERS structure.
-WARN: function tightly coupled to the MARKERS object in marker.const.
 
-**Parameters**
+#### Parameters
 
--   `size` **[string][98]** string that indicates size of marker.
--   `highlighted` **[string][98]** string that indicates highlight state of marker.
+-   `size` **[string][183]** string that indicates size of marker.
+-   `highlighted` **[string][183]** string that indicates highlight state of marker.
 
-Returns **[string][98]** the key of the marker.
+Returns **[string][183]** the key of the marker.
 
 ### \_getMarkerSize
 
 This functions returns the proper marker size given the inputs that describe the scenario
 where the marker is to be applied.
 
-**Parameters**
+#### Parameters
 
--   `transform` **[number][96]** the delta zoom value to calculate resize transformations.
--   `mMax` **[number][96]** a derived value from the max zoom config.
--   `lMax` **[number][96]** a derived value from the min zoom config.
+-   `transform` **[number][181]** the delta zoom value to calculate resize transformations.
+-   `mMax` **[number][181]** a derived value from the max zoom config.
+-   `lMax` **[number][181]** a derived value from the min zoom config.
 
-Returns **[string][98]** the size.
+Returns **[string][183]** the size.
 
 ### \_computeMarkerId
 
 This function holds logic to retrieve the appropriate marker id that reflects the input
 parameters, markers can vary with highlight and transform value.
 
-**Parameters**
+#### Parameters
 
--   `highlight` **[boolean][97]** tells us whether or not some element (link or node) is highlighted.
--   `transform` **[number][96]** the delta zoom value to calculate resize transformations.
--   `config` **[Object][99]** the graph config object.
+-   `highlight` **[boolean][182]** tells us whether or not some element (link or node) is highlighted.
+-   `transform` **[number][181]** the delta zoom value to calculate resize transformations.
+-   `config` **[Object][184]** the graph config object.
     -   `config.maxZoom`
 
-Returns **[string][98]** the id of the result marker.
+Returns **[string][183]** the id of the result marker.
 
 ### \_memoizedComputeMarkerId
 
@@ -780,7 +922,7 @@ since many of the times user will be playing around with the same zoom
 factor, we can take advantage of this and cache the results for a
 given combination of highlight state, zoom transform value and maxZoom config.
 
-Returns **[Function][101]** memoize wrapper to the \_computeMarkerId operation.
+Returns **[Function][186]** memoize wrapper to the \_computeMarkerId operation.
 
 ### getMarkerId
 
@@ -789,12 +931,24 @@ as getter for sake of readability.
 Gets proper marker id given the highlight state and the zoom
 transform.
 
-**Parameters**
+#### Parameters
 
--   `highlight` **[boolean][97]** tells us whether or not some element (link or node) is highlighted.
--   `transform` **[number][96]** the delta zoom value to calculate resize transformations.
--   `config` **[Object][99]** the graph config object.
-    -   `config.maxZoom` **[Object][99]** max zoom that can be performed against the graph.
+-   `highlight` **[boolean][182]** tells us whether or not some element (link or node) is highlighted.
+-   `transform` **[number][181]** the delta zoom value to calculate resize transformations.
+-   `config` **[Object][184]** the graph config object.
+    -   `config.maxZoom` **[Object][184]** max zoom that can be performed against the graph.
+
+### getMarkerSize
+
+Computes the three marker sizes
+For supported shapes in [Graph/helper/getNormalizedNodeCoordinates][198], the function should return 0,
+to be able to control more accurately nodes and arrows sizes and positions in directional graphs.
+
+#### Parameters
+
+-   `config` **[Object][184]** the graph config object.
+
+Returns **[Object][184]** size of markers
 
 ## Node/helper
 
@@ -804,25 +958,36 @@ Some methods that help no the process of rendering a node.
 
 Converts a string that specifies a symbol into a concrete instance
 of d3 symbol.<br/>
-[https://github.com/d3/d3-shape/blob/master/README.md#symbol][121]
+[https://github.com/d3/d3-shape/blob/master/README.md#symbol][199]
 
-**Parameters**
+#### Parameters
 
--   `typeName` **[string][98]** the string that specifies the symbol type (should be one of [node.symbolType][122]).
+-   `typeName` **[string][183]** the string that specifies the symbol type (should be one of [node.symbolType][200]).
 
-Returns **[Object][99]** concrete instance of d3 symbol (defaults to circle).
+Returns **[Object][184]** concrete instance of d3 symbol (defaults to circle).
 
 ### buildSvgSymbol
 
 Build a d3 svg symbol based on passed symbol and symbol type.
 
-**Parameters**
+#### Parameters
 
--   `size` **[number][96]** the size of the symbol. (optional, default `80`)
--   `symbolTypeDesc` **[string][98]** the string containing the type of symbol that we want to build
-    (should be one of [node.symbolType][122]). (optional, default `'circle'`)
+-   `size` **[number][181]** the size of the symbol. (optional, default `80`)
+-   `symbolTypeDesc` **[string][183]** the string containing the type of symbol that we want to build
+    (should be one of [node.symbolType][200]). (optional, default `'circle'`)
 
-Returns **[Object][99]** concrete instance of d3 symbol.
+Returns **[Object][184]** concrete instance of d3 symbol.
+
+### getLabelPlacementProps
+
+return dx, dy, and potentially alignmentBaseline and textAnchor props to put label in correct position relative to node
+
+#### Parameters
+
+-   `dx` **([number][181] \| [undefined][193])** default computed offset of label to the right of the node
+-   `labelPosition` **(`"left"` \| `"right"` \| `"top"` \| `"bottom"` \| `"center"` \| [undefined][193])** user specified position of label relative to node
+
+Returns **({dx: [string][183], dy: [string][183]} | {dx: [string][183], dy: [string][183], textAnchor: [string][183], dominantBaseline: [string][183]})** props to put text svg for label in correct spot. default case returns just dx and dy, without textAnchor and dominantBaseline
 
 ## Graph
 
@@ -830,14 +995,14 @@ Returns **[Object][99]** concrete instance of d3 symbol.
 
 Graph component is the main component for react-d3-graph components, its interface allows its user
 to build the graph once the user provides the data, configuration (optional) and callback interactions (also optional).
-The code for the [live example][123]
-can be consulted [here][124]
+The code for the [live example][201]
+can be consulted [here][202]
 
-**Parameters**
+### Parameters
 
 -   `props`
 
-**Examples**
+### Examples
 
 ```javascript
 import { Graph } from "react-d3-graph";
@@ -845,7 +1010,10 @@ import { Graph } from "react-d3-graph";
 // graph payload (with minimalist structure)
 const data = {
     nodes: [{ id: "Harry" }, { id: "Sally" }, { id: "Alice" }],
-    links: [{ source: "Harry", target: "Sally" }, { source: "Harry", target: "Alice" }],
+    links: [
+        { source: "Harry", target: "Sally" },
+        { source: "Harry", target: "Alice" },
+    ],
 };
 
 // the graph configuration, you only need to pass down properties
@@ -862,8 +1030,9 @@ const myConfig = {
     },
 };
 
-// graph event callbacks
-const onClickGraph = function() {
+// Callback to handle click on the graph.
+// @param {Object} event click dom event
+const onClickGraph = function(event) {
     window.alert("Clicked the graph background");
 };
 
@@ -903,6 +1072,10 @@ const onMouseOutLink = function(source, target) {
     window.alert(`Mouse out link between ${source} and ${target}`);
 };
 
+const onNodePositionChange = function(nodeId, x, y) {
+    window.alert(`Node ${nodeId} moved to new position x= ${x} y= ${y}`);
+};
+
 <Graph
     id="graph-id" // id is mandatory, if no id is defined rd3g will throw an error
     data={data}
@@ -926,77 +1099,77 @@ Obtain a set of properties which will be used to perform the focus and zoom anim
 required. In case there's not a focus and zoom animation in progress, it should reset the
 transition duration to zero and clear transformation styles.
 
-Returns **[Object][99]** Focus and zoom animation properties.
+Returns **[Object][184]** Focus and zoom animation properties.
 
 ### \_graphLinkForceConfig
 
-This method runs [https://github.com/d3/d3-force][125]
+This method runs [https://github.com/d3/d3-force][203]
 against the current graph.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_graphNodeDragConfig
 
-This method runs [https://github.com/d3/d3-drag][126]
+This method runs [https://github.com/d3/d3-drag][204]
 against the current graph.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_graphBindD3ToReactComponent
 
 Sets d3 tick function and configures other d3 stuff such as forces and drag events.
 Whenever called binds Graph component state with d3.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_onDragEnd
 
 Handles d3 drag 'end' event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_onDragMove
 
 Handles d3 'drag' event.
-[more about d3 drag][127]
+[more about d3 drag][205]
 
-**Parameters**
+#### Parameters
 
--   `ev` **[Object][99]** if not undefined it will contain event data.
--   `index` **[number][96]** index of the node that is being dragged.
--   `nodeList` **[Array][100]&lt;[Object][99]>** array of d3 nodes. This list of nodes is provided by d3, each
+-   `ev` **[Object][184]** if not undefined it will contain event data.
+-   `index` **[number][181]** index of the node that is being dragged.
+-   `nodeList` **[Array][185]&lt;[Object][184]>** array of d3 nodes. This list of nodes is provided by d3, each
     node contains all information that was previously fed by rd3g.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_onDragStart
 
 Handles d3 drag 'start' event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_setNodeHighlightedValue
 
 Sets nodes and links highlighted value.
 
-**Parameters**
+#### Parameters
 
--   `id` **[string][98]** the id of the node to highlight.
--   `value` **[boolean][97]** the highlight value to be set (true or false). (optional, default `false`)
+-   `id` **[string][183]** the id of the node to highlight.
+-   `value` **[boolean][182]** the highlight value to be set (true or false). (optional, default `false`)
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_tick
 
 The tick function simply calls React set state in order to update component and render nodes
 along time as d3 calculates new node positioning.
 
-**Parameters**
+#### Parameters
 
--   `state` **[Object][99]** new state to pass on. (optional, default `{}`)
--   `cb` **[Function][101]?** optional callback to fed in to [https://reactjs.org/docs/react-component.html#setstate][128].
+-   `state` **[Object][184]** new state to pass on. (optional, default `{}`)
+-   `cb` **[Function][186]?** optional callback to fed in to [https://reactjs.org/docs/react-component.html#setstate][206].
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_zoomConfig
 
@@ -1004,84 +1177,94 @@ Configures zoom upon graph with default or user provided values.<br/>
 NOTE: in order for users to be able to double click on nodes, we
 are disabling the native dblclick.zoom from d3 that performs a zoom
 whenever a user double clicks on top of the graph.
-[https://github.com/d3/d3-zoom#zoom][129]
+[https://github.com/d3/d3-zoom#zoom][207]
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### \_zoomed
 
 Handler for 'zoom' event within zoom config.
 
-Returns **[Object][99]** returns the transformed elements within the svg graph area.
+Returns **[Object][184]** returns the transformed elements within the svg graph area.
 
 ### onClickGraph
 
 Calls the callback passed to the component.
 
-**Parameters**
+#### Parameters
 
--   `e` **[Object][99]** The event of onClick handler.
+-   `e` **[Object][184]** The event of onClick handler.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### onClickNode
 
 Collapses the nodes, then checks if the click is doubled and calls the callback passed to the component.
 
-**Parameters**
+#### Parameters
 
--   `clickedNodeId` **[string][98]** The id of the node where the click was performed.
+-   `clickedNodeId` **[string][183]** The id of the node where the click was performed.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### onMouseOverNode
 
 Handles mouse over node event.
 
-**Parameters**
+#### Parameters
 
--   `id` **[string][98]** id of the node that participates in the event.
+-   `id` **[string][183]** id of the node that participates in the event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### onMouseOutNode
 
 Handles mouse out node event.
 
-**Parameters**
+#### Parameters
 
--   `id` **[string][98]** id of the node that participates in the event.
+-   `id` **[string][183]** id of the node that participates in the event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### onMouseOverLink
 
 Handles mouse over link event.
 
-**Parameters**
+#### Parameters
 
--   `source` **[string][98]** id of the source node that participates in the event.
--   `target` **[string][98]** id of the target node that participates in the event.
+-   `source` **[string][183]** id of the source node that participates in the event.
+-   `target` **[string][183]** id of the target node that participates in the event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### onMouseOutLink
 
 Handles mouse out link event.
 
-**Parameters**
+#### Parameters
 
--   `source` **[string][98]** id of the source node that participates in the event.
--   `target` **[string][98]** id of the target node that participates in the event.
+-   `source` **[string][183]** id of the source node that participates in the event.
+-   `target` **[string][183]** id of the target node that participates in the event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
+
+### onNodePositionChange
+
+Handles node position change.
+
+#### Parameters
+
+-   `node` **[Object][184]** an object holding information about the dragged node.
+
+Returns **[undefined][193]**
 
 ### pauseSimulation
 
 Calls d3 simulation.stop().<br/>
-[https://github.com/d3/d3-force#simulation_stop][130]
+[https://github.com/d3/d3-force#simulation_stop][208]
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### resetNodesPositions
 
@@ -1089,22 +1272,22 @@ This method resets all nodes fixed positions by deleting the properties fx (fixe
 and fy (fixed y). Following this, a simulation is triggered in order to force nodes to go back
 to their original positions (or at least new positions according to the d3 force parameters).
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### restartSimulation
 
 Calls d3 simulation.restart().<br/>
-[https://github.com/d3/d3-force#simulation_restart][131]
+[https://github.com/d3/d3-force#simulation_restart][209]
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### UNSAFE_componentWillReceiveProps
 
-**Parameters**
+#### Parameters
 
--   `nextProps` **[Object][99]** props.
+-   `nextProps` **[Object][184]** props.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 **Meta**
 
@@ -1112,7 +1295,7 @@ Returns **[undefined][117]**
     that is getDerivedStateFromProps.
     But one needs to be aware that if an anti pattern of `componentWillReceiveProps` is
     in place for this implementation the migration might not be that easy.
-    See [https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html][132].
+    See [https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html][210].
 
 ## Graph/renderer
 
@@ -1122,36 +1305,36 @@ Offers a series of methods that isolate render logic for Graph component.
 
 Build Link components given a list of links.
 
-**Parameters**
+#### Parameters
 
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** same as [nodes in renderGraph][70].
--   `links` **[Array][100]&lt;[Object][99]>** array of links [Link][133].
--   `linksMatrix` **[Array][100]&lt;[Object][99]>** array of links [Link][133].
--   `config` **[Object][99]** same as [config in renderGraph][70].
--   `linkCallbacks` **[Array][100]&lt;[Function][101]>** same as [linkCallbacks in renderGraph][70].
--   `highlightedNode` **[string][98]** same as [highlightedNode in renderGraph][70].
--   `highlightedLink` **[Object][99]** same as [highlightedLink in renderGraph][70].
--   `transform` **[number][96]** value that indicates the amount of zoom transformation.
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** same as [nodes in renderGraph][132].
+-   `links` **[Array][185]&lt;[Object][184]>** array of links [Link][211].
+-   `linksMatrix` **[Array][185]&lt;[Object][184]>** array of links [Link][211].
+-   `config` **[Object][184]** same as [config in renderGraph][132].
+-   `linkCallbacks` **[Array][185]&lt;[Function][186]>** same as [linkCallbacks in renderGraph][132].
+-   `highlightedNode` **[string][183]** same as [highlightedNode in renderGraph][132].
+-   `highlightedLink` **[Object][184]** same as [highlightedLink in renderGraph][132].
+-   `transform` **[number][181]** value that indicates the amount of zoom transformation.
 
-Returns **[Array][100]&lt;[Object][99]>** returns the generated array of Link components.
+Returns **[Array][185]&lt;[Object][184]>** returns the generated array of Link components.
 
 ### \_renderNodes
 
 Function that builds Node components.
 
-**Parameters**
+#### Parameters
 
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** an object containing all nodes mapped by their id.
--   `nodeCallbacks` **[Array][100]&lt;[Function][101]>** array of callbacks for used defined event handler for node interactions.
--   `config` **[Object][99]** an object containing rd3g consumer defined configurations [config][118] for the graph.
--   `highlightedNode` **[string][98]** this value contains a string that represents the some currently highlighted node.
--   `highlightedLink` **[Object][99]** this object contains a source and target property for a link that is highlighted at some point in time.
-    -   `highlightedLink.source` **[string][98]** id of source node for highlighted link.
-    -   `highlightedLink.target` **[string][98]** id of target node for highlighted link.
--   `transform` **[number][96]** value that indicates the amount of zoom transformation.
--   `linksMatrix` **[Object][99]&lt;[string][98], [Object][99]>** the matrix of connections of the graph
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** an object containing all nodes mapped by their id.
+-   `nodeCallbacks` **[Array][185]&lt;[Function][186]>** array of callbacks for used defined event handler for node interactions.
+-   `config` **[Object][184]** an object containing rd3g consumer defined configurations [config][195] for the graph.
+-   `highlightedNode` **[string][183]** this value contains a string that represents the some currently highlighted node.
+-   `highlightedLink` **[Object][184]** this object contains a source and target property for a link that is highlighted at some point in time.
+    -   `highlightedLink.source` **[string][183]** id of source node for highlighted link.
+    -   `highlightedLink.target` **[string][183]** id of target node for highlighted link.
+-   `transform` **[number][181]** value that indicates the amount of zoom transformation.
+-   `linksMatrix` **[Object][184]&lt;[string][183], [Object][184]>** the matrix of connections of the graph
 
-Returns **[Array][100]&lt;[Object][99]>** returns the generated array of node components
+Returns **[Array][185]&lt;[Object][184]>** returns the generated array of node components
 
 ### \_renderDefs
 
@@ -1159,29 +1342,29 @@ Builds graph defs (for now markers, but we could also have gradients for instanc
 NOTE: defs are static svg graphical objects, thus we only need to render them once, the result
 is cached on the 1st call and from there we simply return the cached jsx.
 
-Returns **[Function][101]** memoized build definitions function.
+Returns **[Function][186]** memoized build definitions function.
 
 ### \_memoizedRenderDefs
 
 Memoized reference for \_renderDefs.
 
-**Parameters**
+#### Parameters
 
--   `config` **[Object][99]** an object containing rd3g consumer defined configurations [config][118] for the graph.
+-   `config` **[Object][184]** an object containing rd3g consumer defined configurations [config][195] for the graph.
 
-Returns **[Object][99]** graph reusable objects [defs][134].
+Returns **[Object][184]** graph reusable objects [defs][212].
 
 ### renderGraph
 
 Method that actually is exported an consumed by Graph component in order to build all Nodes and Link
 components.
 
-**Parameters**
+#### Parameters
 
--   `nodes` **[Object][99]&lt;[string][98], [Object][99]>** an object containing all nodes mapped by their id.
--   `nodeCallbacks` **[Array][100]&lt;[Function][101]>** array of callbacks for used defined event handler for node interactions.
--   `links` **[Array][100]&lt;[Object][99]>** array of links [Link][133].
--   `linksMatrix` **[Object][99]&lt;[string][98], [Object][99]>** an object containing a matrix of connections of the graph, for each nodeId,
+-   `nodes` **[Object][184]&lt;[string][183], [Object][184]>** an object containing all nodes mapped by their id.
+-   `nodeCallbacks` **[Array][185]&lt;[Function][186]>** array of callbacks for used defined event handler for node interactions.
+-   `links` **[Array][185]&lt;[Object][184]>** array of links [Link][211].
+-   `linksMatrix` **[Object][184]&lt;[string][183], [Object][184]>** an object containing a matrix of connections of the graph, for each nodeId,
     there is an Object that maps adjacent nodes ids (string) and their values (number).```javascript
     // links example
     {
@@ -1207,15 +1390,15 @@ components.
     ```
 
     ```
--   `linkCallbacks` **[Array][100]&lt;[Function][101]>** array of callbacks for used defined event handler for link interactions.
--   `config` **[Object][99]** an object containing rd3g consumer defined configurations [config][118] for the graph.
--   `highlightedNode` **[string][98]** this value contains a string that represents the some currently highlighted node.
--   `highlightedLink` **[Object][99]** this object contains a source and target property for a link that is highlighted at some point in time.
-    -   `highlightedLink.source` **[string][98]** id of source node for highlighted link.
-    -   `highlightedLink.target` **[string][98]** id of target node for highlighted link.
--   `transform` **[number][96]** value that indicates the amount of zoom transformation.
+-   `linkCallbacks` **[Array][185]&lt;[Function][186]>** array of callbacks for used defined event handler for link interactions.
+-   `config` **[Object][184]** an object containing rd3g consumer defined configurations [config][195] for the graph.
+-   `highlightedNode` **[string][183]** this value contains a string that represents the some currently highlighted node.
+-   `highlightedLink` **[Object][184]** this object contains a source and target property for a link that is highlighted at some point in time.
+    -   `highlightedLink.source` **[string][183]** id of source node for highlighted link.
+    -   `highlightedLink.target` **[string][183]** id of target node for highlighted link.
+-   `transform` **[number][181]** value that indicates the amount of zoom transformation.
 
-Returns **[Object][99]** returns an object containing the generated nodes and links that form the graph.
+Returns **[Object][184]** returns an object containing the generated nodes and links that form the graph.
 
 ## Marker
 
@@ -1223,7 +1406,7 @@ Returns **[Object][99]** returns an object containing the generated nodes and li
 
 Market component provides configurable interface to marker definition.
 
-**Examples**
+### Examples
 
 ```javascript
 <Marker id="marker-id" fill="black" />
@@ -1235,24 +1418,28 @@ Market component provides configurable interface to marker definition.
 
 Node component is responsible for encapsulating node render.
 
-**Examples**
+### Examples
 
 ```javascript
 const onClickNode = function(nodeId) {
-     window.alert('Clicked node', nodeId);
+    window.alert('Clicked node', nodeId);
 };
 
 const onRightClickNode = function(nodeId) {
-     window.alert('Right clicked node', nodeId);
+    window.alert('Right clicked node', nodeId);
 }
 
 const onMouseOverNode = function(nodeId) {
-     window.alert('Mouse over node', nodeId);
+    window.alert('Mouse over node', nodeId);
 };
 
 const onMouseOutNode = function(nodeId) {
-     window.alert('Mouse out node', nodeId);
+    window.alert('Mouse out node', nodeId);
 };
+
+const generateCustomNode(node) {
+    return <CustomComponent node={node} />;
+}
 
 <Node
     id='nodeId'
@@ -1264,6 +1451,7 @@ const onMouseOutNode = function(nodeId) {
     fontWeight='normal'
     dx=90
     label='label text'
+    labelPosition='top'
     opacity=1
     renderLabel=true
     size=200
@@ -1271,7 +1459,7 @@ const onMouseOutNode = function(nodeId) {
     strokeWidth=1.5
     svg='assets/my-svg.svg'
     type='square'
-    viewGenerator=(node) => <CustomComponent node={node} />
+    viewGenerator={generateCustomNode}
     className='node'
     onClickNode={onClickNode}
     onRightClickNode={onRightClickNode}
@@ -1283,29 +1471,29 @@ const onMouseOutNode = function(nodeId) {
 
 Handle click on the node.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### handleOnRightClickNode
 
 Handle right click on the node.
 
-**Parameters**
+#### Parameters
 
--   `event` **[Object][99]** native event.
+-   `event` **[Object][184]** native event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### handleOnMouseOverNode
 
 Handle mouse over node event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### handleOnMouseOutNode
 
 Handle mouse out node event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ## Link
 
@@ -1313,7 +1501,7 @@ Returns **[undefined][117]**
 
 Link component is responsible for encapsulating link render.
 
-**Examples**
+### Examples
 
 ```javascript
 const onClickLink = function(source, target) {
@@ -1352,29 +1540,29 @@ const onMouseOutLink = function(source, target) {
 
 Handle link click event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### handleOnRightClickLink
 
 Handle link right click event.
 
-**Parameters**
+#### Parameters
 
--   `event` **[Object][99]** native event.
+-   `event` **[Object][184]** native event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### handleOnMouseOverLink
 
 Handle mouse over link event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ### handleOnMouseOutLink
 
 Handle mouse out link event.
 
-Returns **[undefined][117]**
+Returns **[undefined][193]**
 
 ## utils
 
@@ -1385,61 +1573,61 @@ that are common across rd3g such as error logging.
 
 Checks whether a certain object property is from object type and is a non empty object.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** the object.
--   `k` **[string][98]** the object property.
+-   `o` **[Object][184]** the object.
+-   `k` **[string][183]** the object property.
 
-Returns **[boolean][97]** returns true if o[k] is an non empty object.
+Returns **[boolean][182]** returns true if o[k] is an non empty object.
 
 ### isDeepEqual
 
 Generic deep comparison between javascript simple or complex objects.
 
-**Parameters**
+#### Parameters
 
--   `o1` **[Object][99]** one of the objects to be compared.
--   `o2` **[Object][99]** second object to compare with first.
--   `_depth` **[number][96]** this parameter serves only for internal usage. (optional, default `0`)
+-   `o1` **[Object][184]** one of the objects to be compared.
+-   `o2` **[Object][184]** second object to compare with first.
+-   `_depth` **[number][181]** this parameter serves only for internal usage. (optional, default `0`)
 
-Returns **[boolean][97]** returns true if o1 and o2 have exactly the same content, or are exactly the same object reference.
+Returns **[boolean][182]** returns true if o1 and o2 have exactly the same content, or are exactly the same object reference.
 
 ### isEmptyObject
 
 Checks whether or not a certain object is empty.
 NOTE: If the passed parameter is not an object the method return false.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** object whom emptiness we want to check.
+-   `o` **[Object][184]** object whom emptiness we want to check.
 
-Returns **[boolean][97]** true if the given object is n ft and object and is empty.
+Returns **[boolean][182]** true if the given object is n ft and object and is empty.
 
 ### deepClone
 
 Function to deep clone plain javascript objects.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** the object to clone.
--   `_clone` **[Object][99]** carries the cloned output throughout the
+-   `o` **[Object][184]** the object to clone.
+-   `_clone` **[Object][184]** carries the cloned output throughout the
     recursive calls. Parameter serves only for internal usage. (optional, default `{}`)
--   `_depth` **[number][96]** this parameter serves only for internal usage. (optional, default `0`)
+-   `_depth` **[number][181]** this parameter serves only for internal usage. (optional, default `0`)
 
-Returns **[Object][99]** the cloned object.
+Returns **[Object][184]** the cloned object.
 
 ### merge
 
 This function merges two objects o1 and o2, where o2 properties override existent o1 properties, and
 if o2 doesn't posses some o1 property the fallback will be the o1 property.
 
-**Parameters**
+#### Parameters
 
--   `o1` **[Object][99]** object. (optional, default `{}`)
--   `o2` **[Object][99]** object that will override o1 properties. (optional, default `{}`)
+-   `o1` **[Object][184]** object. (optional, default `{}`)
+-   `o2` **[Object][184]** object that will override o1 properties. (optional, default `{}`)
 -   `_depth` **int** the depth at which we are merging the object. (optional, default `0`)
 
-Returns **[Object][99]** object that is the result of merging o1 and o2, being o2 properties priority overriding
+Returns **[Object][184]** object that is the result of merging o1 and o2, being o2 properties priority overriding
 existent o1 properties.
 
 ### pick
@@ -1447,167 +1635,278 @@ existent o1 properties.
 Create new object from the inputted one only with the props passed
 in the props list.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** the object to pick props from.
--   `props` **[Array][100]&lt;[string][98]>** list of props that we want to pick from o. (optional, default `[]`)
+-   `o` **[Object][184]** the object to pick props from.
+-   `props` **[Array][185]&lt;[string][183]>** list of props that we want to pick from o. (optional, default `[]`)
 
-Returns **[Object][99]** the object resultant from the picking operation.
+Returns **[Object][184]** the object resultant from the picking operation.
 
 ### antiPick
 
 Picks all props except the ones passed in the props array.
 
-**Parameters**
+#### Parameters
 
--   `o` **[Object][99]** the object to pick props from.
--   `props` **[Array][100]&lt;[string][98]>** list of props that we DON'T want to pick from o. (optional, default `[]`)
+-   `o` **[Object][184]** the object to pick props from.
+-   `props` **[Array][185]&lt;[string][183]>** list of props that we DON'T want to pick from o. (optional, default `[]`)
 
-Returns **[Object][99]** the object resultant from the anti picking operation.
+Returns **[Object][184]** the object resultant from the anti picking operation.
+
+### buildFormattedErrorMessage
+
+Formats an error message with fallbacks for the given parameters.
+
+#### Parameters
+
+-   `component` **[string][183]** component name. (optional, default `"N/A"`)
+-   `msg` **[string][183]** message to log. (optional, default `"N/A"`)
+
+Returns **[string][183]** the error message.
 
 ### throwErr
 
 Helper function for customized error logging.
 
-**Parameters**
+#### Parameters
 
--   `component` **[string][98]** the name of the component where the error is to be thrown.
--   `msg` **[string][98]** the message contain a more detailed explanation about the error.
+-   `component` **[string][183]** the name of the component where the error is to be thrown.
+-   `msg` **[string][183]** the message contain a more detailed explanation about the error.
 
-Returns **[Error][135]** the thrown error.
+Returns **[Error][213]** the thrown error.
+
+### logError
+
+Logs formatted `react-d3-graph` error with `console.error`.
+
+#### Parameters
+
+-   `component` **[string][183]** component name.
+-   `msg` **[string][183]** message to log.
+
+Returns **[undefined][193]**
+
+### logWarning
+
+Helper function for customized warning logging.
+
+#### Parameters
+
+-   `component` **[string][183]** the name of the component where the warning is to be thrown.
+-   `msg` **[string][183]** the message contain a more detailed explanation about the error.
+
+Returns **Warning** the thrown warning.
 
 [1]: #graphcollapse-helper
 [2]: #_isleafdirected
-[3]: #_isleafnotdirected
-[4]: #_isleaf
-[5]: #computenodedegree
-[6]: #gettargetleafconnections
-[7]: #isnodevisible
-[8]: #togglelinksconnections
-[9]: #togglelinksmatrixconnections
-[10]: #graphbuilder
-[11]: #_getnodeopacity
-[12]: #buildlinkprops
-[13]: #buildnodeprops
-[14]: #graphconfig
-[15]: #graphhelper
-[16]: #link
-[17]: #node
-[18]: #_createforcesimulation
-[19]: #_initializelinks
-[20]: #_initializenodes
-[21]: #_mergedatalinkwithd3link
-[22]: #_tagorphannodes
-[23]: #_validategraphdata
-[24]: #_pickid
-[25]: #_picksourceandtarget
-[26]: #checkforgraphelementschanges
-[27]: #checkforgraphconfigchanges
-[28]: #getcenterandzoomtransformation
-[29]: #initializegraphstate
-[30]: #updatenodehighlightedvalue
-[31]: #linkconst
-[32]: #line_types
-[33]: #linkhelper
-[34]: #straightlineradius
-[35]: #smoothcurveradius
-[36]: #fullcurveradius
-[37]: #getradiusstrategy
-[38]: #buildlinkpathdefinition
-[39]: #markerhelper
-[40]: #_markerkeybuilder
-[41]: #_getmarkersize
-[42]: #_computemarkerid
-[43]: #_memoizedcomputemarkerid
-[44]: #getmarkerid
-[45]: #nodehelper
-[46]: #_converttypetod3symbol
-[47]: #buildsvgsymbol
-[48]: #graph
-[49]: #_generatefocusanimationprops
-[50]: #_graphlinkforceconfig
-[51]: #_graphnodedragconfig
-[52]: #_graphbindd3toreactcomponent
-[53]: #_ondragend
-[54]: #_ondragmove
-[55]: #_ondragstart
-[56]: #_setnodehighlightedvalue
-[57]: #_tick
-[58]: #_zoomconfig
-[59]: #_zoomed
-[60]: #onclickgraph
-[61]: #onclicknode
-[62]: #onmouseovernode
-[63]: #onmouseoutnode
-[64]: #onmouseoverlink
-[65]: #onmouseoutlink
-[66]: #pausesimulation
-[67]: #resetnodespositions
-[68]: #restartsimulation
-[69]: #unsafe_componentwillreceiveprops
-[70]: #graphrenderer
-[71]: #_renderlinks
-[72]: #_rendernodes
-[73]: #_renderdefs
-[74]: #_memoizedrenderdefs
-[75]: #rendergraph
-[76]: #marker
-[77]: #node-1
-[78]: #handleonclicknode
-[79]: #handleonrightclicknode
-[80]: #handleonmouseovernode
-[81]: #handleonmouseoutnode
-[82]: #link-1
-[83]: #handleonclicklink
-[84]: #handleonrightclicklink
-[85]: #handleonmouseoverlink
-[86]: #handleonmouseoutlink
-[87]: #utils
-[88]: #_ispropertynestedobject
-[89]: #isdeepequal
-[90]: #isemptyobject
-[91]: #deepclone
-[92]: #merge
-[93]: #pick
-[94]: #antipick
-[95]: #throwerr
-[96]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
-[97]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-[98]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
-[99]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-[100]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
-[101]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
-[102]: #config-node
-[103]: https://github.com/danielcaldas/react-d3-graph/issues/129
-[104]: https://bl.ocks.org/mbostock/2a39a768b1d4bc00a09650edef75ad39
-[105]: https://github.com/d3/d3-force#simulation_alphaTarget
-[106]: https://github.com/d3/d3-force#forces
-[107]: https://github.com/d3/d3-force#link_strength
-[108]: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?v=control
-[109]: https://developer.mozilla.org/en/docs/Web/CSS/font-weight?v=control
-[110]: https://developer.mozilla.org/en/docs/Web/CSS/cursor?v=control
-[111]: https://github.com/d3/d3-shape#symbols
-[112]: https://github.com/d3/d3-force#forceSimulation
-[113]: https://github.com/d3/d3-force#simulation_force
-[114]: #link
-[115]: #node
-[116]: #initializeGraphState
-[117]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined
-[118]: #config
-[119]: http://bl.ocks.org/mbostock/1153292
-[120]: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d
-[121]: https://github.com/d3/d3-shape/blob/master/README.md#symbol
-[122]: #node-symbol-type
-[123]: https://danielcaldas.github.io/react-d3-graph/sandbox/index.html
-[124]: https://github.com/danielcaldas/react-d3-graph/blob/master/sandbox/Sandbox.jsx
-[125]: d3-force
-[126]: d3-drag
-[127]: https://github.com/d3/d3-drag/blob/master/README.md#drag_subject
-[128]: setState()
-[129]: https://github.com/d3/d3-zoom#zoom
-[130]: https://github.com/d3/d3-force#simulation_stop
-[131]: https://github.com/d3/d3-force#simulation_restart
-[132]: https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
-[133]: #Link
-[134]: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs
-[135]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error
+[3]: #parameters
+[4]: #_isleafnotdirected
+[5]: #parameters-1
+[6]: #_isleaf
+[7]: #parameters-2
+[8]: #computenodedegree
+[9]: #parameters-3
+[10]: #gettargetleafconnections
+[11]: #parameters-4
+[12]: #isnodevisible
+[13]: #parameters-5
+[14]: #togglelinksconnections
+[15]: #parameters-6
+[16]: #togglelinksmatrixconnections
+[17]: #parameters-7
+[18]: #graphbuilder
+[19]: #_getnodeopacity
+[20]: #parameters-8
+[21]: #buildlinkprops
+[22]: #parameters-9
+[23]: #buildnodeprops
+[24]: #parameters-10
+[25]: #graphconfig
+[26]: #parameters-11
+[27]: #examples
+[28]: #graphhelper
+[29]: #link
+[30]: #properties
+[31]: #node
+[32]: #properties-1
+[33]: #_createforcesimulation
+[34]: #parameters-12
+[35]: #_initializelinks
+[36]: #parameters-13
+[37]: #_initializenodes
+[38]: #parameters-14
+[39]: #_mergedatalinkwithd3link
+[40]: #parameters-15
+[41]: #_tagorphannodes
+[42]: #parameters-16
+[43]: #_validategraphdata
+[44]: #parameters-17
+[45]: #_pickid
+[46]: #parameters-18
+[47]: #_picksourceandtarget
+[48]: #parameters-19
+[49]: #checkforgraphelementschanges
+[50]: #parameters-20
+[51]: #checkforgraphconfigchanges
+[52]: #parameters-21
+[53]: #getcenterandzoomtransformation
+[54]: #parameters-22
+[55]: #getid
+[56]: #parameters-23
+[57]: #initializegraphstate
+[58]: #parameters-24
+[59]: #updatenodehighlightedvalue
+[60]: #parameters-25
+[61]: #normalize
+[62]: #parameters-26
+[63]: #getnormalizednodecoordinates
+[64]: #parameters-27
+[65]: #linkconst
+[66]: #line_types
+[67]: #properties-2
+[68]: #linkhelper
+[69]: #straightlineradius
+[70]: #smoothcurveradius
+[71]: #parameters-28
+[72]: #fullcurveradius
+[73]: #getradiusstrategy
+[74]: #parameters-29
+[75]: #buildlinkpathdefinition
+[76]: #parameters-30
+[77]: #markerhelper
+[78]: #_markerkeybuilder
+[79]: #parameters-31
+[80]: #_getmarkersize
+[81]: #parameters-32
+[82]: #_computemarkerid
+[83]: #parameters-33
+[84]: #_memoizedcomputemarkerid
+[85]: #getmarkerid
+[86]: #parameters-34
+[87]: #getmarkersize
+[88]: #parameters-35
+[89]: #nodehelper
+[90]: #_converttypetod3symbol
+[91]: #parameters-36
+[92]: #buildsvgsymbol
+[93]: #parameters-37
+[94]: #getlabelplacementprops
+[95]: #parameters-38
+[96]: #graph
+[97]: #parameters-39
+[98]: #examples-1
+[99]: #_generatefocusanimationprops
+[100]: #_graphlinkforceconfig
+[101]: #_graphnodedragconfig
+[102]: #_graphbindd3toreactcomponent
+[103]: #_ondragend
+[104]: #_ondragmove
+[105]: #parameters-40
+[106]: #_ondragstart
+[107]: #_setnodehighlightedvalue
+[108]: #parameters-41
+[109]: #_tick
+[110]: #parameters-42
+[111]: #_zoomconfig
+[112]: #_zoomed
+[113]: #onclickgraph
+[114]: #parameters-43
+[115]: #onclicknode
+[116]: #parameters-44
+[117]: #onmouseovernode
+[118]: #parameters-45
+[119]: #onmouseoutnode
+[120]: #parameters-46
+[121]: #onmouseoverlink
+[122]: #parameters-47
+[123]: #onmouseoutlink
+[124]: #parameters-48
+[125]: #onnodepositionchange
+[126]: #parameters-49
+[127]: #pausesimulation
+[128]: #resetnodespositions
+[129]: #restartsimulation
+[130]: #unsafe_componentwillreceiveprops
+[131]: #parameters-50
+[132]: #graphrenderer
+[133]: #_renderlinks
+[134]: #parameters-51
+[135]: #_rendernodes
+[136]: #parameters-52
+[137]: #_renderdefs
+[138]: #_memoizedrenderdefs
+[139]: #parameters-53
+[140]: #rendergraph
+[141]: #parameters-54
+[142]: #marker
+[143]: #examples-2
+[144]: #node-1
+[145]: #examples-3
+[146]: #handleonclicknode
+[147]: #handleonrightclicknode
+[148]: #parameters-55
+[149]: #handleonmouseovernode
+[150]: #handleonmouseoutnode
+[151]: #link-1
+[152]: #examples-4
+[153]: #handleonclicklink
+[154]: #handleonrightclicklink
+[155]: #parameters-56
+[156]: #handleonmouseoverlink
+[157]: #handleonmouseoutlink
+[158]: #utils
+[159]: #_ispropertynestedobject
+[160]: #parameters-57
+[161]: #isdeepequal
+[162]: #parameters-58
+[163]: #isemptyobject
+[164]: #parameters-59
+[165]: #deepclone
+[166]: #parameters-60
+[167]: #merge
+[168]: #parameters-61
+[169]: #pick
+[170]: #parameters-62
+[171]: #antipick
+[172]: #parameters-63
+[173]: #buildformattederrormessage
+[174]: #parameters-64
+[175]: #throwerr
+[176]: #parameters-65
+[177]: #logerror
+[178]: #parameters-66
+[179]: #logwarning
+[180]: #parameters-67
+[181]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[182]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[183]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[184]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[185]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[186]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[187]: https://github.com/d3/d3-force#forceSimulation
+[188]: https://github.com/d3/d3-force#simulation_force
+[189]: https://github.com/d3/d3-force#forces
+[190]: #link
+[191]: #node
+[192]: #initializeGraphState
+[193]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined
+[194]: https://github.com/d3/d3-force#link_links
+[195]: #config
+[196]: http://bl.ocks.org/mbostock/1153292
+[197]: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d
+[198]: Graph/helper/getNormalizedNodeCoordinates
+[199]: https://github.com/d3/d3-shape/blob/master/README.md#symbol
+[200]: #node-symbol-type
+[201]: https://danielcaldas.github.io/react-d3-graph/sandbox/index.html
+[202]: https://github.com/danielcaldas/react-d3-graph/blob/master/sandbox/Sandbox.jsx
+[203]: d3-force
+[204]: d3-drag
+[205]: https://github.com/d3/d3-drag/blob/master/README.md#drag_subject
+[206]: setState()
+[207]: https://github.com/d3/d3-zoom#zoom
+[208]: https://github.com/d3/d3-force#simulation_stop
+[209]: https://github.com/d3/d3-force#simulation_restart
+[210]: https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
+[211]: #Link
+[212]: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs
+[213]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error
